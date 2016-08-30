@@ -46,9 +46,9 @@ p "number of german cities in Germany:  #{c2.cities.count}"
 
 Tour.destroy_all
 
-t1 = Tour.create :name => "Multi-stop City Tour", :theme => "Paris and Berlin", :duration => "7 days", :top_facts => "a walking and bicycle tour through the historic centres", :highlights => "historical buildings", :price => "480", :image => "louvre", :start_date => "30 Aug 2010", :end_date => "7 Sep 2011"
+t1 = Tour.create :name => "Multi-stop City Tour", :theme => "Paris and Berlin", :duration => "7 days", :top_facts => "a walking and bicycle tour through the historic centres", :highlights => "historical buildings", :price => "480", :image => "louvre.jpg", :start_date => "30 Aug 2010", :end_date => "7 Sep 2011"
 
-t2 = Tour.create :name => "Around around the arrondissement", :theme => "Paris", :duration => "2 days", :top_facts => "a snail paced vehicular tour to watch the 's' cars go", :highlights => "les musees", :price => "120", :image => "arc_de_triomphe", :start_date => "30 Aug 2010", :end_date => "7 Sep 2011"
+t2 = Tour.create :name => "Around around the arrondissement", :theme => "Paris", :duration => "2 days", :top_facts => "a snail paced vehicular tour to watch the 's' cars go", :highlights => "les musees", :price => "120", :image => "arc_de_triomphe.jpg", :start_date => "30 Aug 2010", :end_date => "7 Sep 2011"
 
 
 p t1
