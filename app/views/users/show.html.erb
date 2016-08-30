@@ -1,0 +1,24 @@
+<h1>Users#show</h1>
+<p>Find me in app/views/users/show.html.erb</p>
+
+<h1><%= @user.first_name %></h1>
+
+<ul>
+    <li><%= @user.email %></li>
+    <li><%= @user.admin %></li>
+</ul>
+
+<%if @current_user && @current_user.id == @user.id %>
+<div class="controls">
+    <%= link_to "Edit", edit_user_path(@user.id) %>
+    <%= link_to "Delete Account", user_path(@user.id), :method => :delete %>
+</div>
+
+<%end %>
+
+<h3>User names</h3>
+<ul>
+    <%= @user.each do |a| %>
+    <p><%= a.last_name %></p>
+    <% end %>
+</ul>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TravelsApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <% if session[:important] %>
+  <h1><%= session[:important] %></h1>
+  <%end %>
+
+  <% if flash[:success] %>
+  <h1>
+    <%= flash[:success] %>
+  </h1>
+  <% end %>
+
+  <% if flash[:error] %>
+  <h1>
+    <%= flash[:error] %>
+  </h1>
+  <% end %>
+
+
+  <nav>
+<%= link_to "Countries", "/countries" %>
+<%= link_to "Create a new country", "/countries/new" %>
+<%= link_to "Cities", "/cities" %>
+<%= link_to "Create a new city", "/cities/new" %>
+<%= link_to "Tours", "/tours" %>
+<%= link_to "Create a new tour", "/tours/new" %>
+
+<%= link_to("All Users", users_path) %>
+
+  <% unless @current_user.present? %>
+  <%= link_to("Login", login_path()) %>
+  <%= link_to("SignUp", new_user_path()) %>
+  <%else %>
+  <%= link_to("Edit your profile", edit_user_path(@current_user.id)) %>
+  <%= link_to("Log out #{@current_user.first_name}", logout_path(), :method => :delete) %>
+
+  You are logged in as <%= @current_user.first_name %>
+  <% end %>
+
+
+  </nav>
+
+
+
+
+<%= yield %>
+
+</body>
+</html>

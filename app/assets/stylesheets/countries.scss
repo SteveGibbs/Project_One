@@ -1,0 +1,16 @@
+// Place all the styles related to the Countries controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+  font-family: georgia;
+  background-color: gainsboro;
+}
+.new_country {
+    height: 300px;
+    margin-left: 200px;
+}
+.edit_country {
+    height: 280px;
+    margin-left: 200px;
+}

@@ -1,0 +1,48 @@
+
+
+
+<h1>Tours#show</h1>
+<p>Find me in app/views/tours/show.html.erb</p>
+
+<!-- <p>Find me in app/views/cities/show.html.erb</p> -->
+
+<h2><%= @tour.name %></h2>
+
+<p>
+    <%# if @tour.cities %>
+    <%#= link_to(@tour.cities.name, @tour.cities) %>
+</p>
+<%#end %>
+
+<br>
+<%= image_tag (@tour.image) %>
+<p></p>
+<p></p>
+<%="Top Facts are: #{@tour.top_facts}" %>
+<p></p>
+<p></p>
+
+<%="Cities: #{@tour.cities.pluck(:name)}" %>
+<p></p>
+
+<p></p>
+<% @tour.cities.each do |city| %>
+<%= link_to (city.name) %>
+<%end  %>
+
+
+<%="Cities: #{@tour.city_ids}" %>
+<p></p>
+
+<%="Main highlights are: #{@tour.highlights}" %>
+<p></p>
+<p></p>
+<p></p>
+
+<div class="controls">
+
+    <!-- edit and delete links go here -->
+    <%= link_to "Edit tour", edit_tour_path(@tour.id) %>
+    <%= link_to "Delete tour", @tour, :method => :delete, :data => { :confirm => "Please confirm?"} %>
+
+</div>

@@ -1,0 +1,18 @@
+<h1>Cities</h1>
+<!-- <p>Find me in app/views/cities/index.html.erb</p> -->
+
+<ul>
+    <% @cities.each do |a| %>
+
+    <li>
+        <%= link_to(a.name, "/cities/#{a.id}") %>
+        <p></p>
+    </li>
+    <li>
+        <p></p>
+        <%= image_tag(a.image) %>
+        <p></p>
+    </li>
+
+    <% end %>
+</ul>
