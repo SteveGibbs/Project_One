@@ -8,10 +8,17 @@ class PagesController < ApplicationController
   def faq
   end
 
+  def test
+  if params[:country_id].present?
+    form.select[:city_id, disabled =>['true']]
+  end
+end
+
   def results
     if params[:country_id].present?
     @country = params[:country_id]
       redirect_to country_path(@country)
+    els
     end
     @city = params[:city_id]
     @tour = params[:tour_id]
