@@ -1,4 +1,4 @@
-<h1>Country</h1>
+<h1><%= @country.name %></h1>
 <!-- <p>Find me in app/views/countries/show.html.erb</p> -->
 <h3>Cities</h3>
 
@@ -6,7 +6,12 @@
 
 <ul>
     <% @country.cities.each do |w|  %>
+
+
+
     <li><%= link_to(w.name, "/cities/#{w.id}") %></li>
+    <p></p>
+    <p></p>
     <%end %>
     <p></p>
 </ul>

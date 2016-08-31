@@ -5,8 +5,8 @@
     <% @countries.each do |a| %>
 
     <li>
-        Country
-        <%= link_to(a.name, "/countries/#{a.id}") %>
+
+        <%= link_to(a.name.upcase, "/countries/#{a.id}") %>
         <p></p>
     </li>
     <li>

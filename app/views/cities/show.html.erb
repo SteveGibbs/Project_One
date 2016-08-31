@@ -1,13 +1,9 @@
-<h1>City</h1>
+<h1></h1>
 <!-- <p>Find me in app/views/cities/show.html.erb</p> -->
 
-<h2><%= @city.name %></h2>
+<h2><%= @city.name.upcase %></h2>
 
-<p>
-    <% if @city.country %>
-    <%= link_to(@city.country.name, @city.country) %>
-</p>
-<%end %>
+
 
 <br>
 <%= image_tag (@city.image) %>
@@ -26,5 +22,26 @@
     <!-- edit and delete links go here -->
     <%= link_to "Edit city", edit_city_path(@city.id) %>
     <%= link_to "Delete city", @city, :method => :delete, :data => { :confirm => "Please confirm?"} %>
+    <% if @city.country %>
+    <%= link_to(@city.country.name, @city.country) %>
+<p></p>
+<%end %>
 
 </div>
+
+<%#="Tours: #{@city.tours.pluck(:name)}" %>
+<p></p>
+
+<p></p>
+<% @city.tours.each do |tour| %>
+<%= link_to tour.name, tour_path(tour.id) %>
+<%end  %>
+
+
+
+
+<%#="Cities: #{@tour.city_ids}" %>
+<p></p>
+
+<%#="Main highlights are: #{@tour.highlights}" %>
+<p></p>

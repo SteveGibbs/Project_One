@@ -1,11 +1,11 @@
 <h1>Cities</h1>
 <!-- <p>Find me in app/views/cities/index.html.erb</p> -->
-
+<li>
 <ul>
     <% @cities.each do |a| %>
 
     <li>
-        <%= link_to(a.name, "/cities/#{a.id}") %>
+        <%= link_to(a.name.upcase, "/cities/#{a.id}") %>
         <p></p>
     </li>
     <li>
@@ -16,3 +16,4 @@
 
     <% end %>
 </ul>
+</li>

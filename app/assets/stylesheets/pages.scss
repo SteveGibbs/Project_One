@@ -1,0 +1,27 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-image: image_tag("panoramic1.jpg")
+}
+
+img {
+height: 300%;
+width: 300%;
+align-items: center;
+}
+
+form.search {
+margin: auto;
+height: 300px;
+align-items: center;
+width: 1200px;
+background-color: teal;
+border-radius: 2%;
+font-size: 25px;
+}
+
+.search2{
+  padding-top: 10%;
+}

@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  get 'pages/home' => "pages#home"
+
+  get '/results' => 'pages#results'
+
+  get 'pages/about'
+
+  get 'pages/faq'
+
   root "users#index"
   get "/users/edit" => 'users#edit', :as => "edit_user"
   resources :users, :except => [:edit]

@@ -22,16 +22,18 @@
 <p></p>
 <p></p>
 
-<%="Cities: #{@tour.cities.pluck(:name)}" %>
+<%#="Cities: #{@tour.cities.pluck(:name)}" %>
 <p></p>
 
 <p></p>
 <% @tour.cities.each do |city| %>
-<%= link_to (city.name) %>
+<%#= p city.name %>
+<%= link_to city.name, city_path(city.id) %>
+
 <%end  %>
 
 
-<%="Cities: #{@tour.city_ids}" %>
+<%#="Cities: #{@tour.city_ids}" %>
 <p></p>
 
 <%="Main highlights are: #{@tour.highlights}" %>
