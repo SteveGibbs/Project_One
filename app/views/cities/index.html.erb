@@ -17,3 +17,12 @@
     <% end %>
 </ul>
 </li>
+
+<% options = { units: "metric", APPID: '453c48fb58a938817e07015fb25a87dc' } %>
+<% @weather=OpenWeather::Current.city("Berlin, DE", options) %>
+
+<%= p @weather %>
+
+<p></p>
+<p></p>
+<%= p @weather["main"]["temp_min"] %>

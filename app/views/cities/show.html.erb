@@ -2,10 +2,24 @@
 <!-- <p>Find me in app/views/cities/show.html.erb</p> -->
 
 <h2><%= @city.name.upcase %></h2>
-
-
-
 <br>
+
+<% if @city.country.name =="Germany" %>
+<% @country_code = "DE" %>
+<% else %>
+<%@country_code = "FR"  %>
+<% end %>
+
+<%#= p @weather %>
+<%= p "Current Temp: #{@weather["main"]["temp"].to_i}" %>
+<%= p "Min: #{@weather["main"]["temp_min"].to_i}" %>
+<%= p "Max: #{@weather["main"]["temp_max"].to_i} (c)" %>
+<%= p "Weather: #{@weather["weather"].first["main"]}"%>
+
+<%= image_tag "http://openweathermap.org/img/w/#{ @weather["weather"].first["icon"] }.png", :size => "20x20", :class =>"icon" %>
+
+<p></p>
+<p></p>
 <%= image_tag (@city.image) %>
 <p></p>
 <p></p>
@@ -24,8 +38,8 @@
     <%= link_to "Delete city", @city, :method => :delete, :data => { :confirm => "Please confirm?"} %>
     <% if @city.country %>
     <%= link_to(@city.country.name, @city.country) %>
-<p></p>
-<%end %>
+    <p></p>
+    <%end %>
 
 </div>
 
@@ -36,9 +50,6 @@
 <% @city.tours.each do |tour| %>
 <%= link_to tour.name, tour_path(tour.id) %>
 <%end  %>
-
-
-
 
 <%#="Cities: #{@tour.city_ids}" %>
 <p></p>

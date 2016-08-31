@@ -1,10 +1,18 @@
+require 'open_weather'
+
 class CitiesController < ApplicationController
+
+
+
+
   def index
     @cities = City.all
   end
 
   def show
     @city = City.find params[:id]
+    options = { units: "metric", APPID: Rails.application.secrets.open_weather_password }
+    @weather = OpenWeather::Current.city("#{@city.name}, #{@country_code}", options)
   end
 
   def new
