@@ -1,19 +1,7 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<!-- <p>Find me in app/views/pages/home.html.erb</p> -->
+<h1>Remarkable Voyages</h1>
+<p class="home2">
 
-    <%= image_tag("panoramic1.jpg") %>
-
-<%= render :partial => "form" %>
-
-<!-- <script>
-var abcd = function(){
-
-}
-
-$("#country_id").on("select" , abcd)
-
-</script> -->
-
-<%= p @country %>
-<%= p @tour %>
-<%= p @city %>
+    <%= render :partial => "form" %>
+    <%= image_tag("alps.jpg", :class => "home")%>
+</p>

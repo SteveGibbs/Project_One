@@ -50,7 +50,7 @@ class UsersController < ApplicationController
   end
 
   def authorise
-    flash[:error] = 'You need to be logged in to see that' unless @current_user.present?
+    flash[:error] = 'Please login to view' unless @current_user.present?
     redirect_to login_path unless @current_user.present?
       end
 end

@@ -26,7 +26,7 @@
 
 
   <nav>
-<%= link_to("Home", pages_home_path()) %>    
+<%= link_to("Home", pages_home_path()) %>
 <%= link_to "Countries", "/countries" %>
 <%= link_to "Create a new country", "/countries/new" %>
 <%= link_to "Cities", "/cities" %>
@@ -41,9 +41,9 @@
   <%= link_to("SignUp", new_user_path()) %>
   <%else %>
   <%= link_to("Edit your profile", edit_user_path(@current_user.id)) %>
-  <%= link_to("Log out #{@current_user.first_name}", logout_path(), :method => :delete) %>
+  <%= link_to("Log out #{@current_user.first_name} #{@current_user.last_name}", logout_path(), :method => :delete) %>
 
-  You are logged in as <%= @current_user.first_name %>
+  You are logged in as <%= ("#{@current_user.first_name} #{@current_user.last_name}") %>
   <% end %>
 
 
