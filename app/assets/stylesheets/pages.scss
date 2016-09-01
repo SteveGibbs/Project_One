@@ -18,10 +18,12 @@ z-index: -1;
 }
 
 .header {
-  font-family: monospace;
-  font-size: 40px;
+  font-family: roboto;
+  font-size: 60px;
+  color: #1E90FF;
   text-align: center;
   z-index: 10;
+  font-weight: bold;
 }
 
 form.search {

@@ -2,19 +2,18 @@
 <!-- <p>Find me in app/views/countries/index.html.erb</p> -->
 
 <ul>
-<div class="format1">
-    <% @countries.each do |a| %>
+    <div class="format1">
+        <% @countries.each do |a| %>
 
-    <li>
+        <li>
+            <%= link_to(a.name.upcase, "/countries/#{a.id}") %>
+            <p></p>
+        </li>
+        <li>
+            <%= image_tag(a.image) %>
 
-        <%= link_to(a.name.upcase, "/countries/#{a.id}") %>
-        <p></p>
-    </li>
-    <li>
-        <%= image_tag(a.image) %>
-        <p></p>
-    </li>
-
-    <% end %>
+            <p></p>
+        </li>
+        <% end %>
     </div>
 </ul>

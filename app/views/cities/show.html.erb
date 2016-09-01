@@ -15,8 +15,15 @@
 <%= p "Min: #{@weather["main"]["temp_min"].to_i}" %>
 <%= p "Max: #{@weather["main"]["temp_max"].to_i} (c)" %>
 <%= p "Weather: #{@weather["weather"].first["main"]}"%>
-
 <%= image_tag "http://openweathermap.org/img/w/#{ @weather["weather"].first["icon"] }.png", :size => "20x20", :class =>"icon" %>
+
+<div class="city1">
+<% if @city.country %>
+<%= link_to(@city.country.name, @city.country) %>
+<p></p>
+<%end %>
+</div>
+
 
 <p></p>
 <p></p>
@@ -29,30 +36,18 @@
 <%="Main highlights are: #{@city.highlights}" %>
 <p></p>
 <p></p>
-<p></p>
-
-<div class="controls">
-
-    <!-- edit and delete links go here -->
-    <%= link_to "Edit city", edit_city_path(@city.id) %>
-    <%= link_to "Delete city", @city, :method => :delete, :data => { :confirm => "Please confirm?"} %>
-    <% if @city.country %>
-    <%= link_to(@city.country.name, @city.country) %>
-    <p></p>
-    <%end %>
-
-</div>
-
-<%#="Tours: #{@city.tours.pluck(:name)}" %>
-<p></p>
-
-<p></p>
+<p>Current Tours below:</p>
 <% @city.tours.each do |tour| %>
 <%= link_to tour.name, tour_path(tour.id) %>
 <%end  %>
+<p></p>
+<p></p>
+<div class="controls">
+    <%= link_to "Edit city", edit_city_path(@city.id) %>
+    <%= link_to "Delete city", @city, :method => :delete, :data => { :confirm => "Please confirm?"} %>
 
+</div>
 <%#="Cities: #{@tour.city_ids}" %>
 <p></p>
-
 <%#="Main highlights are: #{@tour.highlights}" %>
 <p></p>

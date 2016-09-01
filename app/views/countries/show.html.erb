@@ -1,31 +1,37 @@
-
 <!-- <p>Find me in app/views/countries/show.html.erb</p> -->
 <h1><%= "Cities in #{@country.name}" %></h1>
+<p></p>
+<p></p>
+<div class="format1">
 
-<h3></h3>
-
-<ul>
     <% @country.cities.each do |w|  %>
-    <li><%= link_to(w.name, "/cities/#{w.id}") %></li>
-    <p></p>
-    <p></p>
+    <%= link_to(w.name, "/cities/#{w.id}") %>
     <%end %>
     <p></p>
-</ul>
+</div>
 
-<p></p>
-<%= image_tag (@country.image) %>
-<p></p>
-<%="Top Facts are: #{@country.top_facts}" %>
-<p></p>
-<%="Main highlights are: #{@country.highlights}" %>
-<p></p>
-<%="Climate: #{@country.weather}" %>
-<p></p>
-<p></p>
-<p></p>
+<div class="countries1">
+
+    <p></p>
+    <p></p>
+    <div class="row">
+        <div class="col s12"></div>
+        <div class="col s10">
+            <%= image_tag(@country.image) %>
+        </div>
+        <div class="col s2">
+                <%="Top Facts are: #{@country.top_facts}" %>
+                <p></p>
+                <%="Main highlights are: #{@country.highlights}" %>
+                <p></p>
+                <%="Climate: #{@country.weather}" %>
+        </div>
+
+    </div>
+</div>
 
 <div class="controls">
-    <%= link_to "Edit Country", edit_country_path(@country.id) %>
-    <%= link_to "Delete Country", @country, :method => :delete, :data => { :confirm => "Please confirm?"} %>
+<%= link_to "Edit Country", edit_country_path(@country.id) %>
+<%= link_to "Delete Country", @country, :method => :delete, :data => { :confirm => "Please confirm?"} %>
+
 </div>

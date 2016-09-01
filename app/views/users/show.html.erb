@@ -25,7 +25,13 @@
 <nav>
     <% if @user.admin.to_s == "true"  %>
     <%= link_to "Create a new country", "/countries/new" %>
+    <%#= link_to "Edit Country", edit_country_path(@country.id) %>
+    <%#= link_to "Delete Country", @country, :method => :delete, :data => { :confirm => "Please confirm?"} %>
+    <%#= link_to "Edit tour", edit_tour_path(@tour.id) %>
+    <%#= link_to "Delete tour", @tour, :method => :delete, :data => { :confirm => "Please confirm?"} %>
     <%= link_to "Create a new city", "/cities/new" %>
+    <%#= link_to "Edit city", edit_city_path(@city.id) %>
+    <%#= link_to "Delete city", @city, :method => :delete, :data => { :confirm => "Please confirm?"} %>
     <%= link_to "Create a new tour", "/tours/new" %>
     <%= link_to("All Users", users_path) %>
     <%end %>
