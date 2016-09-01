@@ -15,7 +15,7 @@ body {
 }
 form {
     text-align: left;
-    width: 500px;
+    width: 600px;
     margin-top: 20px;
     height: 650px;
     border: 10px;
@@ -33,15 +33,14 @@ label {
     // width: 200px;
 }
 
-.countries label, .cities label, .tours label {
+.countries label, .cities label, .tours label, .users label {
     width: 200px;
 }
 
-.countries input[id*='country'], .cities input[id*='city'], .tours input[id*='tour'] {
+.countries input[id*='country'], .cities input[id*='city'], .tours input[id*='tour'], input#email, input#password {
     margin-left: 0;
 }
 
-// input#country_name
 input[id*='country'], input[id*='city'], input[id*='tour'], input[id*='user'], input#email, input#password
  {
     background-color: white;
