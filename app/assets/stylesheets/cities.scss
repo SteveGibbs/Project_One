@@ -4,7 +4,7 @@
 
 .new_city {
 height: 300px;
-margin-left: 200px;
+margin: 0 auto;
 }
 
 select {
@@ -12,8 +12,9 @@ select {
 }
 
 .edit_city {
+  margin-top: 200px;
   height: 300px;
-  margin-left: 200px;
+  margin: 0 auto;
 }
 
 img {
@@ -27,4 +28,8 @@ img {
 
 h2 {
   margin-bottom: -30px;
+}
+
+h1{
+  text-align: center;
 }

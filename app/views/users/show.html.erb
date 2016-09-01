@@ -1,13 +1,19 @@
-<h1>Users#show</h1>
+<h1></h1>
 
 <!-- <p>Find me in app/views/users/show.html.erb</p> -->
 
-<h1><%= @user.first_name %></h1>
+<h1><%= "User account for #{@user.first_name} #{@user.last_name}"%></h1>
 
 <ul>
-    <li><%= @user.email %></li>
-    <li><%= @user.admin %></li>
+    <div class="user3">
+    <li><%= "Email address: #{@user.email}" %></li>
+    <li><% if @user.admin.to_s == "false" %></li>
+    <li><%= "Account Privileges: Customer" %></li>
+    <% else %>
+    <%= "Account Privileges: Administrator" %>
+    <%end %>
 </ul>
+</div>
 
 <%if @current_user && @current_user.id == @user.id %>
 <div class="controls">

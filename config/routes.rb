@@ -8,7 +8,8 @@ Rails.application.routes.draw do
 
   get 'pages/faq'
 
-  root "users#index"
+  # root "users#index"
+  root "pages#home"
   get "/users/edit" => 'users#edit', :as => "edit_user"
   resources :users, :except => [:edit]
   resources :countries, :cities, :tours
