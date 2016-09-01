@@ -23,9 +23,23 @@ form {
     border-color: black;
     background-color: orange;
 }
-input,
+
 label {
     margin-left: 50px;
+    color: white;
+    font-size: 20px;
+
+}
+
+// input#country_name
+input[id*='country'], input[id*='city'], input[id*='tour'], input[id*='user'], input#email, input#password
+ {
+    background-color: white;
+    color: black;
+    // margin-left: 70px;
+    width: auto;
+    height: 30px;
+    margin-left: 100px;
 }
 
 .user3 {

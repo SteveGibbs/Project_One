@@ -36,8 +36,11 @@ d2 = City.create :name => "Marseille", :top_facts => "south of france", :highlig
 
 d3 = City.create :name => "Berlin", :top_facts => "Eclectic and fast paced", :highlights => "Alternative scene", :image => "berlin.jpg"
 
+d4 = City.create :name => "Munich", :top_facts => "Oktoberfest is a wonderful time", :highlights => "Relaxed and historic areas", :image => "munich.jpg"
+
 c1.cities << d1 << d2
 c2.cities << d3
+c2.cities << d4
 
 p "#{City.all.count}"
 p "number of french cities in France:  #{c1.cities.count}"
@@ -49,12 +52,18 @@ t1 = Tour.create :name => "Multi-stop City Tour", :theme => "Paris and Berlin", 
 
 t2 = Tour.create :name => "Around around the arrondissement", :theme => "Paris", :duration => "2 days", :top_facts => "a snail paced vehicular tour to watch the 's' cars go", :highlights => "les musees", :price => "120", :image => "arc_de_triomphe.jpg", :start_date => "30 Aug 2010", :end_date => "7 Sep 2011"
 
+t3 = Tour.create :name => "Knuckling down to Munich", :theme => "Lederhosen", :duration => "1 day", :top_facts => "a riotous trip through German culture - it will be a crackling good time", :highlights => "the historic centre", :price => "120", :image => "oktoberfest.jpg", :start_date => "30 Aug 2010", :end_date => "7 Sep 2011"
+
+t4 = Tour.create :name => "Crystal clear calanques", :theme => "Aqua marine waters", :duration => "1 day", :top_facts => "one of the wonders of the nature - striking grey mountain formations dropping down to crystalline waters", :highlights => "the food", :price => "80", :image => "calanques.jpg", :start_date => "30 Sep 2010", :end_date => "14 Sep 2011"
+
 
 p t1
 p t2
 
 t1.cities << d1 << d3
 t2.cities << d1
+t3.cities << d4
+t4.cities << d2
 
 p "#{t1.cities.count}"
 

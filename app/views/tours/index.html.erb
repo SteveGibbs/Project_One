@@ -3,9 +3,10 @@
 
 <ul>
     <% @tours.each do |a| %>
-
     <li>
+            <div class="format1">
         <%= link_to(a.name, "/tours/#{a.id}") %>
+    </div>
     </li>
     <li>
         <p></p>
@@ -16,8 +17,6 @@
         <p>
             <%= "Main highlights: #{a.highlights}" %>
         </p>
-
     </li>
-
     <% end %>
 </ul>

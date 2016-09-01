@@ -6,7 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="<%= params[:controller] %> <%= params[:action] %>">
 
   <% if session[:important] %>
   <h1><%= session[:important] %></h1>
@@ -28,13 +28,8 @@
   <nav>
 <%= link_to("Home", pages_home_path()) %>
 <%= link_to "Countries", "/countries" %>
-<%= link_to "Create a new country", "/countries/new" %>
 <%= link_to "Cities", "/cities" %>
-<%= link_to "Create a new city", "/cities/new" %>
 <%= link_to "Tours", "/tours" %>
-<%= link_to "Create a new tour", "/tours/new" %>
-
-<%= link_to("All Users", users_path) %>
 
   <% unless @current_user.present? %>
   <%= link_to("Login", login_path()) %>
@@ -53,7 +48,7 @@
 <div class="container">
 
   <%= yield %>
-  
+
 </div>
 </body>
 </html>

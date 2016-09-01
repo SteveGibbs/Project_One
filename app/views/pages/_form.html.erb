@@ -1,14 +1,13 @@
-
 <%=form_tag('/results', :method => 'get', :class => "search") do %>
 
 <p></p>
-<div class="search2">
+
 <%= label_tag(:country) %>
 <%= collection_select(nil, :country_id, Country.all, :id, :name, :include_blank => :true) %>
-<!-- <p></p> -->
+
 <%= label_tag(:city) %>
 <%= collection_select(nil, :city_id, City.all, :id, :name, :include_blank => :true) %>
-<!-- <p></p> -->
+
 <%= label_tag(:tour) %>
 <%= collection_select(nil, :tour_id, Tour.all, :id, :name, :include_blank => :true) %>
 

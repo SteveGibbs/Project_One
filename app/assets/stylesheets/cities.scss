@@ -2,8 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+
+// body.countries.index {
+//   background: hotpink;
+// }
+
 .new_city {
-height: 300px;
 margin: 0 auto;
 }
 
@@ -13,8 +18,15 @@ select {
 
 .edit_city {
   margin-top: 200px;
-  height: 300px;
   margin: 0 auto;
+}
+
+.edit_city label {
+  height: 16px;
+  // height: 20px;
+}
+.format1{
+  font-size: 30px;
 }
 
 img {
@@ -31,5 +43,13 @@ h2 {
 }
 
 h1{
+  font-size: 45px;
   text-align: center;
+}
+
+input.submit_format {
+position: relative;
+// text-align: right;
+margin-left: 50px;
+margin-bottom: 20px;
 }

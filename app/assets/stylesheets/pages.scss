@@ -1,11 +1,13 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-//
-// body {
-//   background-image: url("alps.jpg");
-//   background-size: 1700px;
-// }
+
+// CSS pages are global and formats apply across all pages - the delineation across controllers/model names is purely to order workflow
+body.pages.home {
+  background-image: url("alps.jpg");
+  background-size: 120%;
+//   background-size: 1900px;
+}
 
 .home {
 height: 110%;
@@ -23,7 +25,6 @@ z-index: -1;
 }
 
 form.search {
-text-align: center; 
 margin: 0 auto;
 height: 150px;
 width: 1200px;
@@ -40,3 +41,8 @@ z-index: 10;
 .container {
   padding-top: 70px;
 }
+// img.home {
+//
+//   margin-top: -150px;
+//
+// }

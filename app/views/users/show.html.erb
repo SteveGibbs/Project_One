@@ -6,13 +6,13 @@
 
 <ul>
     <div class="user3">
-    <li><%= "Email address: #{@user.email}" %></li>
-    <li><% if @user.admin.to_s == "false" %></li>
-    <li><%= "Account Privileges: Customer" %></li>
+        <li><%= "Email address: #{@user.email}" %></li>
+        <li><% if @user.admin.to_s == "false" %></li>
+        <li><%= "Account Privileges: Customer" %></li>
     <% else %>
-    <%= "Account Privileges: Administrator" %>
-    <%end %>
-</ul>
+        <%= "Account Privileges: Administrator" %>
+        <%end %>
+    </ul>
 </div>
 
 <%if @current_user && @current_user.id == @user.id %>
@@ -22,7 +22,14 @@
 </div>
 
 <%end %>
-
+<nav>
+    <% if @user.admin.to_s == "true"  %>
+    <%= link_to "Create a new country", "/countries/new" %>
+    <%= link_to "Create a new city", "/cities/new" %>
+    <%= link_to "Create a new tour", "/tours/new" %>
+    <%= link_to("All Users", users_path) %>
+    <%end %>
+</nav>
 <ul>
     <%#= @user.tours.each do |a| %>
     <p><%#= a.name %></p>
