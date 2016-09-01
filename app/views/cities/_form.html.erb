@@ -1,29 +1,26 @@
 <li>
-<%= form_for @city do |f| %>
-<p>
-    <br>
-    <br>
-    <%= f.label :name %>
-    <%= f.text_field :name, :required => true %>
-</p>
-<p>
-    <%= f.label :top_facts %>
-    <%= f.text_field :top_facts, :required => true %>
-</p>
-<p>
-    <%= f.label :highlights %>
-    <%= f.text_field :highlights, :required => true %>
-</p>
-<p>
-    <%= f.label :image %>
-    <%= f.text_field :image, :required => true %>
-</p>
-<p>
-
-    <p>
-        <%= f.collection_select(:country_id, Country.all, :id, :name)%>
-    </p>
-
-    <%= f.submit :class => "submit_format" %>
+    <%= form_for @city do |f| %>
+        <p>
+            <br>
+            <br>
+            <%= f.label :name %>
+            <%= f.text_field :name, :required => true %>
+        </p>
+        <p>
+            <%= f.label :top_facts %>
+            <%= f.text_field :top_facts, :required => true %>
+        </p>
+        <p>
+            <%= f.label :highlights %>
+            <%= f.text_field :highlights, :required => true %>
+        </p>
+        <p>
+            <%= f.label :image %>
+            <%= f.text_field :image, :required => true %>
+        </p>
+        <p>
+            <%= f.collection_select(:country_id, Country.all, :id, :name)%>
+        </p>
+        <%= f.submit :class => "submit_format" %>
     <% end %>
 </li>

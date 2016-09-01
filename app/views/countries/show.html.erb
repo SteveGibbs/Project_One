@@ -16,22 +16,22 @@
     <p></p>
     <div class="row">
         <div class="col s12"></div>
-        <div class="col s10">
+        <div class="col s9">
             <%= image_tag(@country.image) %>
         </div>
-        <div class="col s2">
-                <%="Top Facts are: #{@country.top_facts}" %>
-                <p></p>
-                <%="Main highlights are: #{@country.highlights}" %>
-                <p></p>
-                <%="Climate: #{@country.weather}" %>
+        <div class="col s3">
+            <%="Top Facts are: #{@country.top_facts}" %>
+            <p></p>
+            <%="Main highlights are: #{@country.highlights}" %>
+            <p></p>
+            <%="Climate: #{@country.weather}" %>
         </div>
 
     </div>
 </div>
 
 <div class="controls">
-<%= link_to "Edit Country", edit_country_path(@country.id) %>
-<%= link_to "Delete Country", @country, :method => :delete, :data => { :confirm => "Please confirm?"} %>
+    <%= link_to "Edit Country", edit_country_path(@country.id) %>
+    <%= link_to "Delete Country", @country, :method => :delete, :data => { :confirm => "Please confirm?"} %>
 
 </div>

@@ -4,9 +4,8 @@
 
 // CSS pages are global and formats apply across all pages - the delineation across controllers/model names is purely to order workflow
 body.pages.home {
-  background-image: url("alps.jpg");
-  background-size: 120%;
-//   background-size: 1900px;
+  background-image: image-url("alps.jpg");
+  background-size: 110%;
 }
 
 .home {
@@ -24,7 +23,19 @@ z-index: -1;
   text-align: center;
   z-index: 10;
   font-weight: bold;
+  animation-name: example;
+    animation-duration: 3s;
 }
+
+@keyframes example {
+ 0% {color: white;}
+ 25% {color: yellow;}
+ 50% {color: orange;}
+ 75% {color: red;}
+ 100% {color: #1E90FF;}
+
+}
+
 
 form.search {
 margin: 0 auto;

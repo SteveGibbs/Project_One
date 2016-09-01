@@ -22,13 +22,23 @@ form {
     border-radius: 10%;
     border-color: black;
     background-color: orange;
+    height: auto;
 }
 
 label {
     margin-left: 50px;
     color: white;
     font-size: 20px;
+    display: inline-block;
+    // width: 200px;
+}
 
+.countries label, .cities label, .tours label {
+    width: 200px;
+}
+
+.countries input[id*='country'], .cities input[id*='city'], .tours input[id*='tour'] {
+    margin-left: 0;
 }
 
 // input#country_name
@@ -36,7 +46,6 @@ input[id*='country'], input[id*='city'], input[id*='tour'], input[id*='user'], i
  {
     background-color: white;
     color: black;
-    // margin-left: 70px;
     width: auto;
     height: 30px;
     margin-left: 100px;
