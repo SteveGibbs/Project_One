@@ -11,6 +11,6 @@
 <%= label_tag(:tour) %>
 <%= collection_select(nil, :tour_id, Tour.all, :id, :name, :include_blank => :true) %>
 
-<%= submit_tag("Submit Search") %>
+<%= submit_tag "Submit Search", :class => "submit_format1" %>
 </div>
 <% end %>

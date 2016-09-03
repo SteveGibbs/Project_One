@@ -29,7 +29,10 @@
 <p></p>
 
 <div class="controls">
-    <%= link_to "Edit tour", edit_tour_path(@tour.id) %>
-    <%= link_to "Delete tour", @tour, :method => :delete, :data => { :confirm => "Please confirm?"} %>
-
+    <% if @current_user == nil %>
+        <% %>
+    <%elsif @current_user.admin.to_s == "true"  %>
+        <%= link_to "Edit tour", edit_tour_path(@tour.id) %>
+        <%= link_to "Delete tour", @tour, :method => :delete, :data => { :confirm => "Please confirm?"} %>
+        <%end %>
 </div>

@@ -1,8 +1,14 @@
-<h1></h1>
-
 <!-- <p>Find me in app/views/users/show.html.erb</p> -->
 
 <h1><%= "User account for #{@user.first_name} #{@user.last_name}"%></h1>
+
+
+<%= @user.tours.each do |tour| %>
+<%= "Tours booked:" %>
+<p></p>
+<%= tour.name %>
+<% end %>
+
 
 <ul>
     <div class="user3">
@@ -30,7 +36,3 @@
     <%=     link_to("All Users", users_path) %>
     <%end %>
 </nav>
-
-<%#= @user.tours.each do |a| %>
-<%#= a.name %>
-<%# end %>

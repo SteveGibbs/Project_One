@@ -4,8 +4,8 @@
 
 // CSS pages are global and formats apply across all pages - the delineation across controllers/model names is purely to order workflow
 body.pages.home {
-  background-image: image-url("alps.jpg");
-  background-size: 110%;
+  background-image: image-url("field.jpg");
+  background-size: 100%;
 }
 
 .home {
@@ -19,7 +19,8 @@ z-index: -1;
 .header {
   font-family: roboto;
   font-size: 60px;
-  color: #1E90FF;
+  // color: #1E90FF;
+  color: #005ce6;
   text-align: center;
   z-index: 10;
   font-weight: bold;
@@ -32,8 +33,7 @@ z-index: -1;
  25% {color: yellow;}
  50% {color: orange;}
  75% {color: red;}
- 100% {color: #1E90FF;}
-
+ 100% {color: #005ce6;}
 }
 
 
@@ -54,8 +54,9 @@ z-index: 10;
 .container {
   padding-top: 70px;
 }
-// img.home {
-//
-//   margin-top: -150px;
-//
-// }
+
+.submit_format1 {
+  color: black;
+  font-size: 14px;
+  margin-left: 24px;
+}

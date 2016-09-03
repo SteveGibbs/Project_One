@@ -41,5 +41,5 @@
     <p>
         <%= f.collection_check_boxes(:city_ids, City.all, :id, :name) %>
     </p>
-    <%= f.submit :class => "submit_format" %>
+    <%= f.submit "Submit", :class => "submit_format" %>
 <% end %>

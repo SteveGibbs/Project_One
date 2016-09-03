@@ -21,6 +21,6 @@
         <p>
             <%= f.collection_select(:country_id, Country.all, :id, :name)%>
         </p>
-        <%= f.submit :class => "submit_format" %>
+        <%= f.submit "Submit", :class => "submit_format" %>
     <% end %>
 </li>

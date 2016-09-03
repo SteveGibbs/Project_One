@@ -18,13 +18,12 @@
 <%= image_tag "http://openweathermap.org/img/w/#{ @weather["weather"].first["icon"] }.png", :size => "20x20", :class =>"icon" %>
 
 <div class="city1">
-<% if @city.country %>
-<%= link_to(@city.country.name, @city.country) %>
-<p></p>
-<p></p>
-<%end %>
+    <% if @city.country %>
+    <%= link_to(@city.country.name, @city.country) %>
+    <p></p>
+    <p></p>
+    <%end %>
 </div>
-
 
 <p></p>
 <p></p>
@@ -44,9 +43,12 @@
 <p></p>
 <p></p>
 <div class="controls">
-    <%= link_to "Edit city", edit_city_path(@city.id) %>
-    <%= link_to "Delete city", @city, :method => :delete, :data => { :confirm => "Please confirm?"} %>
-
+    <% if @current_user == nil %>
+        <% %>
+    <%elsif @current_user.admin.to_s == "true"  %>
+        <%= link_to "Edit city", edit_city_path(@city.id) %>
+        <%= link_to "Delete city", @city, :method => :delete, :data => { :confirm => "Please confirm?"} %>
+        <%end %>
 </div>
 <%#="Cities: #{@tour.city_ids}" %>
 <p></p>

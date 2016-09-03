@@ -50,7 +50,7 @@ Tour.destroy_all
 
 t1 = Tour.create :name => "Multi-stop City Tour", :theme => "Paris and Berlin", :duration => "7 days", :top_facts => "a walking and bicycle tour through the historic centres", :highlights => "historical buildings", :price => "480", :image => "louvre.jpg", :start_date => "30 Aug 2010", :end_date => "7 Sep 2011"
 
-t2 = Tour.create :name => "Around around the arrondissement", :theme => "Paris", :duration => "2 days", :top_facts => "a snail paced vehicular tour to watch the 's' cars go", :highlights => "les musees", :price => "120", :image => "arc_de_triomphe.jpg", :start_date => "30 Aug 2010", :end_date => "7 Sep 2011"
+t2 = Tour.create :name => "Around and around the arrondissement", :theme => "Paris", :duration => "2 days", :top_facts => "a snail paced vehicular tour to watch the 's' cars go", :highlights => "les musees", :price => "120", :image => "arc_de_triomphe.jpg", :start_date => "30 Aug 2010", :end_date => "7 Sep 2011"
 
 t3 = Tour.create :name => "Knuckling down to Munich", :theme => "Lederhosen", :duration => "1 day", :top_facts => "a riotous trip through German culture - it will be a crackling good time", :highlights => "the historic centre", :price => "120", :image => "oktoberfest.jpg", :start_date => "30 Aug 2010", :end_date => "7 Sep 2011"
 

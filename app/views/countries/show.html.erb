@@ -11,7 +11,6 @@
 </div>
 
 <div class="countries1">
-
     <p></p>
     <p></p>
     <div class="row">
@@ -31,7 +30,11 @@
 </div>
 
 <div class="controls">
-    <%= link_to "Edit Country", edit_country_path(@country.id) %>
-    <%= link_to "Delete Country", @country, :method => :delete, :data => { :confirm => "Please confirm?"} %>
+    <% if @current_user == nil %>
+        <% %>
+    <%elsif @current_user.admin.to_s == "true"  %>
+        <%= link_to "Edit Country", edit_country_path(@country.id) %>
+        <%= link_to "Delete Country", @country, :method => :delete, :data => { :confirm => "Please confirm?"} %>
+        <%end %>
 
 </div>
