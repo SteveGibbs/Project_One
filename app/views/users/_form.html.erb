@@ -15,7 +15,7 @@
         <br>
         <br>
         <%= f.label :title %>
-        <%= f.text_field :title, :required => true %>
+        <%= f.text_field :title, :required => true, :maxlength => 7, :size => 20 %>
     </p>
     <p>
         <%= f.label :first_name %>
@@ -31,11 +31,11 @@
     </p>
     <p>
         <%= f.label :dob, "Date of Birth" %>
-        <%= f.text_field :dob, :required => true %>
+        <%= f.date_field :dob, :required => true %>
     </p>
     <p>
         <%= f.label :contact_number %>
-        <%= f.text_field :contact_number, :required => true %>
+        <%= f.text_field :contact_number, :required => true, :minlength => 7, :maxlength => 12, :size => 20 %>
     </p>
     <p>
         <%= f.label :address_line_1 %>
