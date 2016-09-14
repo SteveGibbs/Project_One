@@ -3,10 +3,10 @@
 <h1><%= "User account for #{@user.first_name} #{@user.last_name}"%></h1>
 
 
-<%= @user.tours.each do |tour| %>
+<% @user.tours.each do |tour| %>
 <%= "Tours booked:" %>
 <p></p>
-<%= tour.name %>
+<%= link_to(tour.name, tour_path(tour)) %>
 <% end %>
 
 
