@@ -1,19 +1,44 @@
-<h1>Countries</h1>
+<h1>DESTINATIONS</h1>
 <!-- <p>Find me in app/views/countries/index.html.erb</p> -->
 
-<ul>
+<!-- <ul>
     <div class="format1">
         <% @countries.each do |a| %>
-
         <li>
-            <%= link_to(a.name.upcase, "/countries/#{a.id}") %>
+            <%#= link_to(a.name.upcase, "/countries/#{a.id}") %>
             <p></p>
         </li>
         <li>
-            <%= image_tag(a.image) %>
-
+            <%#= image_tag(a.image) %>
             <p></p>
         </li>
         <% end %>
     </div>
+</ul> -->
+
+
+<ul>
+    <div class="country-main-style">
+        <% @countries.each do |a| %>
+    <li>
+
+
+
+
+        <div class="country-style">
+        <div class="country-image">
+        <%= image_tag(a.image) %>
+        </div>
+        <div class="country-text">
+            <div id="country-link">
+            <h3>
+            <%= link_to(a.name.upcase, "/countries/#{a.id}") %>
+            </h3>
+
+        </div>
+    </div>
+</li>
+        <% end %>
+    </div>
+</div>
 </ul>

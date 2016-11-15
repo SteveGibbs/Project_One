@@ -41,11 +41,6 @@ h2 {
   margin-bottom: -30px;
 }
 
-h1{
-  font-size: 45px;
-  text-align: center;
-}
-
 input.submit_format {
 margin: 0 auto;
 margin-bottom: 20px;
@@ -54,4 +49,67 @@ display: block;
 
 .city1 {
   text-align: center;
+}
+
+.cities li {
+display: inline-block;
+}
+.city-style {
+  width: 540px;
+  height: 360px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.city-image {
+  width: 540px;
+  height: 360px;
+  position: relative;
+  // display: block;
+  display: inline-block;
+}
+.city-image img {
+  height: 100%;
+  width: 100%;
+}
+.city-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 540px;
+  height: 360px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.8);
+  opacity: 0;
+  transition: opacity 0.6s;
+  vertical-align: middle;
+  display: inline-table;
+  line-height: 360px;
+}
+
+.city-text a {
+  padding: 0;
+}
+
+.city-text:hover {
+  opacity: 1;
+}
+
+.city-text a:hover {
+  color: white;
+  padding: 0;
+}
+
+.city-text h5 {
+  display: inline-table;
+  vertical-align: middle;
+  line-height: 100%;
+}
+
+.cities li {
+  display: inline-block;
 }

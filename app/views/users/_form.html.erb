@@ -9,71 +9,37 @@
     <h1>Profile</h1>
 
     <%= form_for @user do |f| %>
-
-    <p>
-        <br>
-        <br>
-        <br>
+<br>
         <%= f.label :title %>
         <%= f.text_field :title, :required => true, :maxlength => 7, :size => 20 %>
-    </p>
-    <p>
         <%= f.label :first_name %>
         <%= f.text_field :first_name, :required => true %>
-    </p>
-    <p>
         <%= f.label :last_name %>
         <%= f.text_field :last_name, :required => true %>
-    </p>
-    <p>
         <%= f.label :email %>
         <%= f.email_field :email, :required => true %>
-    </p>
-    <p>
         <%= f.label :dob, "Date of Birth" %>
         <%= f.date_field :dob, :required => true %>
-    </p>
-    <p>
         <%= f.label :contact_number %>
         <%= f.text_field :contact_number, :required => true, :minlength => 7, :maxlength => 12, :size => 20 %>
-    </p>
-    <p>
         <%= f.label :address_line_1 %>
         <%= f.text_field :address_line_1, :required => true %>
-    </p>
-    <p>
         <%= f.label :address_line_2 %>
         <%= f.text_field :address_line_2 %>
-    </p>
-    <p>
         <%= f.label :suburb %>
         <%= f.text_field :suburb, :required => true %>
-    </p>
-    <p>
         <%= f.label :state %>
         <%= f.text_field :state, :required => true %>
-    </p>
-    <p>
         <%= f.label :postcode %>
         <%= f.text_field :postcode, :required => true %>
-    </p>
-    <p>
         <%= f.label :diet, "Special Dietary Requirements" %>
         <%= f.text_field :diet %>
-    </p>
     <%= f.label :medical_condition, "Any Medical Conditions" %>
     <%= f.text_field :medical_condition %>
-</p>
-
-<p>
     <%= f.label :password %>
     <%= f.password_field :password, :required => true%>
-</p>
-
-<p>
     <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation, :required => true%>
-</p>
 
 <%= f.submit "Submit", :class => "submit_format"%>
 <%end %>

@@ -1,21 +1,24 @@
-<h1>Cities</h1>
+<h1>CITY BREAKS</h1>
 <!-- <p>Find me in app/views/cities/index.html.erb</p> -->
-<li>
-<ul>
-    <div class="format1">
-        <% @cities.each do |a| %>
 
+<ul>
+    <div class="city-main-style">
+
+        <% @cities.each do |a| %>
         <li>
-            <%= link_to(a.name.upcase, "/cities/#{a.id}") %>
-            <p></p>
-        </li>
-        <li>
-            <p></p>
-            <%= image_tag(a.image) %>
-            <p></p>
+            <div class="city-style">
+                <div class="city-link">
+                <h5>
+                    <%= link_to(a.name.upcase, "/cities/#{a.id}") %>
+                </h5>
+                    </div>
+                    <p></p>
+                    <div class="city-image">
+                        <%= image_tag(a.image) %>
+                    </div>
+            </div>
         </li>
 
         <% end %>
     </div>
 </ul>
-</li>

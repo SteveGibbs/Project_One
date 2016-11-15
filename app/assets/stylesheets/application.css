@@ -14,6 +14,10 @@
  *= require_self
  */
 
+body {
+  font-family: "Lato";
+}
+
 body select {
   display: inline;
   width: auto;
@@ -27,21 +31,35 @@ body .input-field {
   background-color: white;
 }
 
-
-
 nav {
-  font-family: georgia;
-  background-color: lightblue;
+  background-color: lightslategray;
   font-size: 16px;
-  padding: 20px;
-  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 nav:hover{
   background-color: gray;
 }
 
+footer {
+  
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  height: 5px;
+}
+
+
 a {
-  padding: 20px;
+  margin-left: 30px;
+  padding-left: 15px;
+  height: 100%;
+  text-align: center;
+}
+
+a:hover{
+  color: black;
 }
 
 li {

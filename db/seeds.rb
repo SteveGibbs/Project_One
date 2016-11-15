@@ -26,7 +26,9 @@ c1 = Country.create :name => "France", :top_facts => "Bread is nice", :highlight
 
 c2 = Country.create :name => "Germany", :top_facts => "Gimme your wurst", :highlights => "lederhosen and dirndls", :weather => "grey", :image => "bavaria.jpg"
 
+c3 = Country.create :name => "Greece", :top_facts => "Cradle of civilisation", :highlights => "natural produce and island hopping", :weather => "sunny", :image => "santorini_greece.jpg"
 
+c4 = Country.create :name => "Italy", :top_facts => "All roads lead to Rome", :highlights => "history and architecture", :weather => "sunny", :image => "venice.jpg"
 
 City.destroy_all
 

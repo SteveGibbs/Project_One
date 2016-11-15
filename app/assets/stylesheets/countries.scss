@@ -3,7 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body{
-  font-family: georgia;
   background-color: gainsboro;
 }
 .new_country {
@@ -15,4 +14,71 @@ body{
 
 .row .col.s9 {
   width: 75%;
+}
+
+.country-style {
+  width: 540px;
+  height: 360px;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.country-image {
+  width: 540px;
+  height: 360px;
+  position: relative;
+  // display: block;
+  display: inline-block;
+}
+.country-image img {
+  height: 100%;
+  width: 100%;
+}
+.country-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 540px;
+  height: 360px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.8);
+  opacity: 0;
+  transition: opacity 0.6s;
+  vertical-align: middle;
+  display: inline-table;
+  line-height: 360px;
+}
+
+.country-text a {
+  padding: 0;
+}
+
+.country-text:hover {
+  opacity: 1;
+}
+
+.country-text a:hover {
+  color: white;
+  padding: 0;
+}
+
+.country-text h3 {
+  display: inline-table;
+  vertical-align: middle;
+  line-height: 100%;
+}
+
+.countries li {
+  display: inline-block;
+}
+
+h1 {
+  color: #039be5;
+  font-family: "Acme";
+  font-size: 48px;
+  text-align: center;
 }
