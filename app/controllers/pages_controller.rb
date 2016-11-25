@@ -24,6 +24,8 @@ end
     elsif params[:tour_id].present?
       @tour = params[:tour_id]
       redirect_to tour_path(@tour)
+    else
+      redirect_to pages_home_path
     end
     # @city = params[:city_id]
     # @tour = params[:tour_id]

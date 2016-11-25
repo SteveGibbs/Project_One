@@ -1,17 +1,7 @@
 // Place all thema styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body {
-    background-color: gainsboro;
-}
-// .sign {
-//     margin-left: 200px;
-//     text-align: left;
-//     width: 600px;
-//     height: 1000px;
-//     border: 10px;
-//     border-color: black;
-// }
+
 form {
     margin: 0 auto;
     text-align: left;
@@ -36,8 +26,6 @@ label {
 .countries label, .cities label, .tours label, .users label, .session label, {
     width: 250px;
 }
-
-
 
 // .countries input[id*='country'], .cities input[id*='city'], .tours input[id*='tour'], input#email, input#password {
 //     margin-left: 0;

@@ -16,6 +16,7 @@
 
 body {
   font-family: "Lato";
+  background-color: #F4F8F6;
 }
 
 body select {
@@ -41,15 +42,6 @@ nav {
 nav:hover{
   background-color: gray;
 }
-
-footer {
-  
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  height: 5px;
-}
-
 
 a {
   margin-left: 30px;

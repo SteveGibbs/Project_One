@@ -16,29 +16,24 @@
     </div>
 </ul> -->
 
-
 <ul>
     <div class="country-main-style">
         <% @countries.each do |a| %>
-    <li>
+        <li>
 
+            <div class="country-style">
+                <div class="country-image-<%=a.name%>">
+                        <%= image_tag(a.image) %>
+                    </div>
 
+                    <div class="country-text-<%=a.name%>">
+                            <h3>
+                                <%= link_to(a.name.upcase, "/countries/#{a.id}") %>
+                            </h3>
+                    </div>
+                </div>
+            </li>
+            <% end %>
 
-
-        <div class="country-style">
-        <div class="country-image">
-        <%= image_tag(a.image) %>
-        </div>
-        <div class="country-text">
-            <div id="country-link">
-            <h3>
-            <%= link_to(a.name.upcase, "/countries/#{a.id}") %>
-            </h3>
-
-        </div>
     </div>
-</li>
-        <% end %>
-    </div>
-</div>
 </ul>
