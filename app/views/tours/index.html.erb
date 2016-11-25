@@ -1,16 +1,15 @@
 <h1>TOURS</h1>
-<!-- <p>Find me in app/views/tours/index.html.erb</p> -->
 
 <ul>
     <% @tours.each do |a| %>
     <li>
-        <div class="format1">
+        <div class="header-style-city-tour">
             <%= link_to(a.name, "/tours/#{a.id}") %>
         </div>
-    </li>
-    <li>
         <p></p>
-        <%= image_tag(a.image) %>
+        <div class="city-image">
+            <%= image_tag(a.image) %>
+        </div>
         <p>
             <%= "Cities for the tour: #{a.theme}" %>
         </p>

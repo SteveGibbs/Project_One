@@ -1,40 +1,31 @@
-<!-- <p>Find me in app/views/countries/show.html.erb</p> -->
-<h1><%= "Cities in #{@country.name}" %></h1>
-<p></p>
-<p></p>
-<div class="format1">
-
-    <% @country.cities.each do |w|  %>
-    <%= link_to(w.name, "/cities/#{w.id}") %>
-    <%end %>
-    <p></p>
-</div>
-
-<div class="countries1">
-    <p></p>
-    <p></p>
-    <div class="row">
-        <div class="col s12"></div>
-        <div class="col s9">
+<ul>
+    <h1><%= "Cities in #{@country.name}" %></h1>
+    <li>
+            <div class="city-image">
             <%= image_tag(@country.image) %>
-        </div>
-        <div class="col s3">
+            </div>
+            <div class="header-style-city-tour">
+                <% @country.cities.each do |w|  %>
+                <%= link_to(w.name, "/cities/#{w.id}") %>
+                <%end %>
+                <p></p>
+            </div>
+
+        </li>
+        <li>
             <%="Top Facts are: #{@country.top_facts}" %>
             <p></p>
             <%="Main highlights are: #{@country.highlights}" %>
             <p></p>
             <%="Climate: #{@country.weather}" %>
-        </div>
+        </li>
+    </ul>
 
-    </div>
-</div>
-
-<div class="controls">
-    <% if @current_user == nil %>
+    <div class="controls">
+        <% if @current_user == nil %>
         <% %>
-    <%elsif @current_user.admin.to_s == "true"  %>
+        <%elsif @current_user.admin.to_s == "true"  %>
         <%= link_to "Edit Country", edit_country_path(@country.id) %>
         <%= link_to "Delete Country", @country, :method => :delete, :data => { :confirm => "Please confirm?"} %>
         <%end %>
-
-</div>
+    </div>
