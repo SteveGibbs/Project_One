@@ -48,13 +48,12 @@ margin-bottom: 20px;
 display: block;
 }
 
-.city1 {
-  text-align: center;
+.city-country-header {
+  text-align: right;
+  margin-right: 40px;
 }
 
-.cities li {
-display: inline-block;
-}
+
 .city-style {
   width: 540px;
   height: 360px;
@@ -113,4 +112,5 @@ display: inline-block;
 
 .cities li {
   display: inline-block;
+  width: 580px;
 }

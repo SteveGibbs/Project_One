@@ -1,56 +1,61 @@
 <h1></h1>
-<!-- <p>Find me in app/views/cities/show.html.erb</p> -->
+<ul>
+    <li>
+        <h2><%= @city.name.upcase %></h2>
+        <br>
 
-<h2><%= @city.name.upcase %></h2>
+        <% if @city.country.name =="Germany" %>
+        <% @country_code = "DE" %>
+    <% else %>
+        <%@country_code = "FR"  %>
+        <% end %>
+        <%= p "Current Temp: #{@weather["main"]["temp"].to_i}" %>
+        <%= p "Min: #{@weather["main"]["temp_min"].to_i}" %>
+        <%= p "Max: #{@weather["main"]["temp_max"].to_i} (c)" %>
+        <%= p "Weather: #{@weather["weather"].first["main"]}"%>
+        <%= image_tag "http://openweathermap.org/img/w/#{ @weather["weather"].first["icon"] }.png", :size => "20x20", :class =>"icon" %>
 <br>
+        <div class="city-country-header">
+            <% if @city.country %>
+            <%= link_to(@city.country.name, @city.country) %>
+            <p></p>
+            <p></p>
+            <%end %>
+        </div>
 
-<% if @city.country.name =="Germany" %>
-<% @country_code = "DE" %>
-<% else %>
-<%@country_code = "FR"  %>
-<% end %>
+        <p></p>
+        <p></p>
+        <div class="city-image">
+        <%= image_tag (@city.image) %>
+    </div>
+    </li>
 
-<%#= p @weather %>
-<%= p "Current Temp: #{@weather["main"]["temp"].to_i}" %>
-<%= p "Min: #{@weather["main"]["temp_min"].to_i}" %>
-<%= p "Max: #{@weather["main"]["temp_max"].to_i} (c)" %>
-<%= p "Weather: #{@weather["weather"].first["main"]}"%>
-<%= image_tag "http://openweathermap.org/img/w/#{ @weather["weather"].first["icon"] }.png", :size => "20x20", :class =>"icon" %>
+    <li>
+        <%="Top Facts are: #{@city.top_facts}" %>
+        <p></p>
 
-<div class="city1">
-    <% if @city.country %>
-    <%= link_to(@city.country.name, @city.country) %>
-    <p></p>
-    <p></p>
-    <%end %>
-</div>
+        <%="Main highlights are: #{@city.highlights}" %>
+        <p></p>
+        <p></p>
+        <p>Current Tours below:</p>
+        <% @city.tours.each do |tour| %>
+        <%= link_to tour.name, tour_path(tour.id) %>
+        <br>
+        <%end  %>
+    </li>
+</ul>
 
-<p></p>
-<p></p>
-<%= image_tag (@city.image) %>
-<p></p>
-<p></p>
-<%="Top Facts are: #{@city.top_facts}" %>
-<p></p>
 
-<%="Main highlights are: #{@city.highlights}" %>
-<p></p>
-<p></p>
-<p>Current Tours below:</p>
-<% @city.tours.each do |tour| %>
-<%= link_to tour.name, tour_path(tour.id) %>
-<%end  %>
+
 <p></p>
 <p></p>
 <div class="controls">
     <% if @current_user == nil %>
-        <% %>
+    <% %>
     <%elsif @current_user.admin.to_s == "true"  %>
-        <%= link_to "Edit city", edit_city_path(@city.id) %>
-        <%= link_to "Delete city", @city, :method => :delete, :data => { :confirm => "Please confirm?"} %>
-        <%end %>
+    <%= link_to "Edit city", edit_city_path(@city.id) %>
+    <%= link_to "Delete city", @city, :method => :delete, :data => { :confirm => "Please confirm?"} %>
+    <%end %>
 </div>
-<%#="Cities: #{@tour.city_ids}" %>
 <p></p>
-<%#="Main highlights are: #{@tour.highlights}" %>
 <p></p>
