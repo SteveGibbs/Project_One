@@ -81,6 +81,9 @@ h1 {
   width: 540px;
 }
 
+.fix {
+  display: none;
+}
 @media only screen and (max-width: 1024px) {
   .countries li {
     display: inline-block;
@@ -115,5 +118,7 @@ h1 {
   height: 360px;
 }
 
-
+.fix {
+  display: inline;
+}
 }
