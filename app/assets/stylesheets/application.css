@@ -18,20 +18,17 @@ body {
   font-family: "Lato";
   background-color: #F4F8F6;
 }
-
 body select {
   display: inline;
   width: auto;
   font-size: 16px;
   margin-top: 4%;
 }
-
 body .input-field {
   display: inline;
   height: 16px;
   background-color: white;
 }
-
 nav {
   background-color: lightslategray;
   font-size: 16px;
@@ -39,21 +36,18 @@ nav {
   margin: 0 auto;
   padding: 0;
 }
-nav:hover{
+nav:hover {
   background-color: gray;
 }
-
 a {
   margin-left: 30px;
   padding-left: 15px;
   height: 100%;
   text-align: center;
 }
-
-a:hover{
+a:hover {
   color: black;
 }
-
 li {
   list-style-type: none;
 }

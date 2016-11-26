@@ -114,3 +114,30 @@ display: block;
   display: inline-block;
   width: 580px;
 }
+
+@media only screen and (max-width: 1024px) {
+  .cities li {
+    display: inline-block;
+    width: 325px;
+  }
+
+  .city-style {
+    width: 320px;
+    height: 213.3px;
+  }
+
+  [class*="city-image"] {
+    width: 320px;
+    height: 213.3px;
+  }
+
+  [class*="city-image"] img {
+    height: 213.3px;
+    width: 320px;
+  }
+  [class*="city-text"] {
+    width: 320px;
+    height: 213.3px;
+    line-height: 213.3px;
+  }
+}

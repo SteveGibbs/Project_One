@@ -9,10 +9,6 @@
     margin: 0 auto;
 }
 
-.row .col.s9 {
-  width: 75%;
-}
-
 .country-style {
   width: 540px;
   height: 360px;
@@ -79,4 +75,45 @@ h1 {
   font-family: "Acme";
   font-size: 48px;
   text-align: center;
+}
+.country-individual img {
+  height: 360px;
+  width: 540px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .countries li {
+    display: inline-block;
+    width: 325px;
+  }
+
+  .country-style {
+    width: 320px;
+    height: 213.3px;
+  }
+
+  [class*="country-image"] {
+    width: 320px;
+    height: 213.3px;
+  }
+
+  [class*="country-image"] img {
+    height: 213.3px;
+    width: 320px;
+  }
+  [class*="country-text"] {
+    width: 320px;
+    height: 213.3px;
+    line-height: 213.3px;
+  }
+.country-individual img {
+  width: 540px;
+  height: 360px;
+}
+.country-individual {
+  width: 540px;
+  height: 360px;
+}
+
+
 }

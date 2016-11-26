@@ -1,31 +1,37 @@
 <ul>
     <h1><%= "Cities in #{@country.name}" %></h1>
+
     <li>
-            <div class="city-image">
+    <div class="country-individual">
             <%= image_tag(@country.image) %>
-            </div>
-            <div class="header-style-city-tour">
-                <% @country.cities.each do |w|  %>
-                <%= link_to(w.name, "/cities/#{w.id}") %>
-                <%end %>
-                <p></p>
-            </div>
-
-        </li>
-        <li>
-            <%="Top Facts are: #{@country.top_facts}" %>
+        </div>
+        <div class="header-style-city-tour">
+            <% @country.cities.each do |w|  %>
+            <%= link_to(w.name, "/cities/#{w.id}") %>
+            <%end %>
             <p></p>
-            <%="Main highlights are: #{@country.highlights}" %>
-            <p></p>
-            <%="Climate: #{@country.weather}" %>
-        </li>
-    </ul>
+        </div>
+    </li>
 
-    <div class="controls">
-        <% if @current_user == nil %>
-        <% %>
-        <%elsif @current_user.admin.to_s == "true"  %>
-        <%= link_to "Edit Country", edit_country_path(@country.id) %>
-        <%= link_to "Delete Country", @country, :method => :delete, :data => { :confirm => "Please confirm?"} %>
-        <%end %>
-    </div>
+
+    <li>
+<div class="country-individual">
+        <%="Top Facts are: #{@country.top_facts}" %>
+        <p></p>
+        <%="Main highlights are: #{@country.highlights}" %>
+        <p></p>
+        <%="Climate: #{@country.weather}" %>
+</div>
+    </li>
+
+
+</ul>
+
+<div class="controls">
+    <% if @current_user == nil %>
+    <% %>
+    <%elsif @current_user.admin.to_s == "true"  %>
+    <%= link_to "Edit Country", edit_country_path(@country.id) %>
+    <%= link_to "Delete Country", @country, :method => :delete, :data => { :confirm => "Please confirm?"} %>
+    <%end %>
+</div>

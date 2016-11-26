@@ -5,7 +5,7 @@
 // CSS pages are global and formats apply across all pages - the delineation across controllers/model names is purely to order workflow
 body.pages.home {
   background-image: image-url("europe.jpg");
-  background-size: 100%;
+  background-size: cover;
 }
 
 .home {
@@ -68,7 +68,7 @@ z-index: 10;
 @media only screen and (max-width: 1024px) {
 
 form.search {
-  max-width: 550px;
+  max-width: 5500px;
 }
   .search label {
     font-size: 16px;
