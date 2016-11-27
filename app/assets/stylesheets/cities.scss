@@ -141,3 +141,34 @@ display: block;
     line-height: 213.3px;
   }
 }
+
+@media only screen and (max-width: 375px) {
+  .cities li {
+    display: inline-block;
+    width: 142px;
+  }
+
+  .city-style {
+    width: 142px;
+    height: 96px;
+  }
+
+  [class*="city-image"] {
+    width: 142px;
+    height: 96px;
+  }
+
+  [class*="city-image"] img {
+    height: 96px;
+    width: 142px;
+  }
+  [class*="city-text"] {
+    width: 142px;
+    height: 96px;
+    line-height: 96px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}

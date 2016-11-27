@@ -123,3 +123,50 @@ h1 {
 }
 
 }
+
+@media only screen and (max-width: 375px) {
+  .countries li {
+    display: inline-block;
+    width: 142px;
+  }
+
+  .country-style {
+    width: 142px;
+    height: 96px;
+  }
+
+  [class*="country-image"] {
+    width: 142px;
+    height: 96px;
+  }
+
+  [class*="country-image"] img {
+    height: 96px;
+    width: 142px;
+  }
+  [class*="country-text"] {
+    width: 142px;
+    height: 96px;
+    line-height: 96px;
+  }
+.country-individual img {
+  width: 270px;
+  height: 180px;
+}
+.country-individual {
+  width: 270px;
+  height: 180px;
+}
+
+[class*="country-text"] h3 {
+  font-size: 12px;
+}
+
+.fix {
+  display: inline;
+}
+
+h1 {
+  font-size: 30px;
+}
+}

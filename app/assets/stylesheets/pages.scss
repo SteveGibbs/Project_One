@@ -89,5 +89,35 @@ form.search {
       background-size: 1800px;
       background-position: -600px 0;
   }
+}
 
+@media only screen and (max-width: 375px) {
+
+h1.header {
+  font-size: 40px;
+}
+
+nav {
+  height: auto;
+}
+
+form.search {
+  max-width: 300px;
+}
+select#_tour_id {
+  max-width: 160px;
+}
+
+.search label {
+  font-size: 14px;
+  }
+
+  .search select {
+    padding-bottom: 16px;
+  }
+
+  .submit_format1 {
+    color: black;
+    font-size: 10px;
+  }
 }
