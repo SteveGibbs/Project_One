@@ -1,15 +1,22 @@
 <h1>TOURS</h1>
 
 <ul>
+    <div class="city-main-style">
     <% @tours.each do |a| %>
     <li>
-        <div class="header-style-city-tour">
+        <div class="city-style">
+            <div class="city-link">
+                <h5>
+
+
             <%= link_to(a.name, "/tours/#{a.id}") %>
+        </h5>
         </div>
         <p></p>
         <div class="city-image">
             <%= image_tag(a.image) %>
         </div>
+    </div>
         <p>
             <%= "Cities for the tour: #{a.theme}" %>
         </p>
@@ -18,4 +25,5 @@
         </p>
     </li>
     <% end %>
+</div>
 </ul>

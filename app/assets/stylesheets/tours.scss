@@ -17,3 +17,15 @@
   display: inline-block;
   width: 580px;
 }
+
+@media only screen and (max-width: 1024px) {
+  .tours li {
+    display: inline-block;
+    width: 325px;
+  }
+
+h5{
+font-size: 16px;
+}
+
+  }
