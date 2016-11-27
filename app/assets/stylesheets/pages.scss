@@ -102,7 +102,8 @@ nav {
 }
 
 form.search {
-  max-width: 300px;
+  width: auto;
+  display: block;
 }
 select#_tour_id {
   max-width: 160px;
@@ -110,10 +111,14 @@ select#_tour_id {
 
 .search label {
   font-size: 14px;
-  }
+  width: 90px;
+  margin-left: -10px;
+    }
 
   .search select {
+    width: 140px;
     padding-bottom: 16px;
+
   }
 
   .submit_format1 {

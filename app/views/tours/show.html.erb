@@ -1,13 +1,11 @@
 <h1></h1>
-<!-- <p>Find me in app/views/tours/show.html.erb</p> -->
-
-<!-- <p>Find me in app/views/cities/show.html.erb</p> -->
 
 <h4><%= "Current Tour: #{@tour.name}"%></h4>
 <p></p>
 <br>
 <%= image_tag (@tour.image) %>
 <p></p>
+<br class="fix">
 <p></p>
 <%="Top Facts are: #{@tour.top_facts}" %>
 <p></p>
@@ -30,9 +28,9 @@
 
 <div class="controls">
     <% if @current_user == nil %>
-        <% %>
+    <% %>
     <%elsif @current_user.admin.to_s == "true"  %>
-        <%= link_to "Edit tour", edit_tour_path(@tour.id) %>
-        <%= link_to "Delete tour", @tour, :method => :delete, :data => { :confirm => "Please confirm?"} %>
-        <%end %>
+    <%= link_to "Edit tour", edit_tour_path(@tour.id) %>
+    <%= link_to "Delete tour", @tour, :method => :delete, :data => { :confirm => "Please confirm?"} %>
+    <%end %>
 </div>

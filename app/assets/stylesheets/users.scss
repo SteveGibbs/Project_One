@@ -43,3 +43,13 @@ input[id*='country'], input[id*='city'], input[id*='tour'], input[id*='user'], i
     margin-top: 100px;
     text-align: center;
 }
+
+@media only screen and (max-width: 568px) {
+  form.login_form {
+      width: auto;
+  }
+
+  form#new_user.new_user {
+    width: auto;
+  }
+  }
