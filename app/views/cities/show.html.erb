@@ -25,12 +25,15 @@
 
         <p></p>
         <p></p>
-        <div class="city-image">
+        <div class="country-individual">
         <%= image_tag (@city.image) %>
     </div>
     </li>
+<br class="fix">
+
 
     <li>
+        <div class="country-individual">
         <%="Top Facts are: #{@city.top_facts}" %>
         <p></p>
 
@@ -42,6 +45,7 @@
         <%= link_to tour.name, tour_path(tour.id) %>
         <br>
         <%end  %>
+    </div>
     </li>
 </ul>
 
