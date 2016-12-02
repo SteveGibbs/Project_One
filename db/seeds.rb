@@ -74,6 +74,10 @@ t3 = Tour.create :name => "Knuckling down to Munich", :theme => "Lederhosen", :d
 
 t4 = Tour.create :name => "Crystal clear calanques", :theme => "Aqua marine waters", :duration => "1 day", :top_facts => "one of the wonders of the nature - striking grey mountain formations dropping down to crystalline waters", :highlights => "the food", :price => "80", :image => "calanques.jpg", :start_date => "30 Sep 2010", :end_date => "14 Sep 2011"
 
+t5 = Tour.create :name => "London City tour", :theme => "A wander through the city centre and along the Thames", :duration => "1 day", :top_facts => "A great day out", :highlights => "everything", :price => "80", :image => "london-eye.jpg", :start_date => "30 Sep 2010", :end_date => "14 Sep 2011"
+
+t6 = Tour.create :name => "Venice Gondolas", :theme => "A tour by water", :duration => "3 hours", :top_facts => "unrivalled views of Venice with stops in-between", :highlights => "Venice", :price => "120", :image => "gondola.jpg", :start_date => "30 Sep 2010", :end_date => "14 Sep 2011"
+
 
 p t1
 p t2
@@ -82,6 +86,8 @@ t1.cities << d1 << d3
 t2.cities << d1
 t3.cities << d4
 t4.cities << d2
+t5.cities << d5
+t6.cities << d8
 
 p "#{t1.cities.count}"
 

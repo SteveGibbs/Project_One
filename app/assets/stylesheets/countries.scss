@@ -65,6 +65,21 @@ text-align: center;
   padding: 0;
 }
 
+.country-text-tour {
+  opacity: 1;
+  background-color: rgba(0,0,0,0);
+}
+
+div.country-text-tour a {
+  color: white;
+  position: bottom;
+}
+
+
+.country-text-tour a:hover {
+  color: black;
+}
+
 [class*="country-text"] h3 {
   display: inline-table;
   vertical-align: middle;
