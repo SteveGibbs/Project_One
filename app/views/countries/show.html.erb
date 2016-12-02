@@ -1,7 +1,7 @@
 <ul>
     <h1><%= "Cities in #{@country.name}" %></h1>
 
-    <li>
+    <li class="country-individual-li">
     <div class="country-individual">
             <%= image_tag(@country.image) %>
         </div>
@@ -14,7 +14,7 @@
     </li>
 <br class="fix">
 
-    <li>
+    <li class="country-individual-li">
 <div class="country-individual">
         <%="Top Facts are: #{@country.top_facts}" %>
         <p></p>

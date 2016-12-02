@@ -10,17 +10,22 @@
 }
 
 .country-style {
-  width: 540px;
-  height: 360px;
+  width: 378px;
+  height: 264.6px;
   position: relative;
   padding: 0;
   margin: 0;
   text-align: center;
 }
 
+.country-main-style {
+text-align: center;
+
+}
+
 [class*="country-image"] {
-  width: 540px;
-  height: 360px;
+  width: 378px;
+  height: 264.6px;
   position: relative;
   display: inline-block;
 }
@@ -29,21 +34,22 @@
   height: 100%;
   width: 100%;
 }
+
 [class*="country-text"] {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  width: 540px;
-  height: 360px;
+  width: 378px;
+  height: 264.6px;
   text-align: center;
   background-color: rgba(0,0,0,0.8);
   opacity: 0;
   transition: opacity 0.6s;
   vertical-align: middle;
   display: inline-table;
-  line-height: 360px;
+  line-height: 264.6px;
 }
 
 [class*="country-text"] a {
@@ -65,7 +71,15 @@
   line-height: 100%;
 }
 
-.countries li {
+
+.country-main-li {
+  text-align: center;
+  display: inline-block;
+  width: 380px;
+}
+
+.country-individual-li {
+  text-align: center;
   display: inline-block;
   width: 580px;
 }
@@ -76,14 +90,23 @@ h1 {
   font-size: 48px;
   text-align: center;
 }
+
 .country-individual img {
   height: 360px;
   width: 540px;
 }
 
+.country-individual {
+  width: 550px;
+  height: 360px;
+  text-align: left;
+}
+
+
 .fix {
   display: none;
 }
+
 @media only screen and (max-width: 1024px) {
   .countries li {
     display: inline-block;
@@ -104,18 +127,21 @@ h1 {
     height: 213.3px;
     width: 320px;
   }
+
   [class*="country-text"] {
     width: 320px;
     height: 213.3px;
     line-height: 213.3px;
   }
+
 .country-individual img {
-  width: 540px;
-  height: 360px;
+  width: 378px;
+  height: 264.6px;
 }
+
 .country-individual {
-  width: 540px;
-  height: 360px;
+  width: 378px;
+  height: 264.6px;
 }
 
 .fix {

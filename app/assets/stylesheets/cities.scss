@@ -24,6 +24,7 @@ select {
 .edit_city label {
   height: 16px;
 }
+
 .header-style-city-tour{
   font-size: 30px;
 }
@@ -170,5 +171,7 @@ display: block;
 
   h1 {
     font-size: 30px;
+    width: auto;
+    text-align: center;
   }
 }
