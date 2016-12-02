@@ -42,6 +42,25 @@ nav {
 nav:hover {
   background-color: gray;
 }
+
+span.nav-logo {
+  margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+        margin-top: -60px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1500px)
+{
+  span.nav-logo {
+    display: none;
+  }
+}
+
+
 a {
   margin-left: 30px;
   padding-left: 15px;
