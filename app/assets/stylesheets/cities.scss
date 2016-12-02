@@ -116,6 +116,12 @@ display: block;
   width: 580px;
 }
 
+.city-attractions {
+    font-family: "Lato";
+    font-size: 30px;
+    color: black;
+}
+
 @media only screen and (max-width: 1024px) {
   .cities li {
     display: inline-block;

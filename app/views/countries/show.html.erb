@@ -2,7 +2,7 @@
     <h1><%= "Cities in #{@country.name}" %></h1>
 
     <li class="country-individual-li">
-    <div class="country-individual">
+        <div class="country-individual">
             <%= image_tag(@country.image) %>
         </div>
         <div class="header-style-city-tour">
@@ -12,20 +12,55 @@
             <p></p>
         </div>
     </li>
-<br class="fix">
+    <br class="fix">
 
     <li class="country-individual-li">
-<div class="country-individual">
-        <%="Top Facts are: #{@country.top_facts}" %>
-        <p></p>
-        <%="Main highlights are: #{@country.highlights}" %>
-        <p></p>
-        <%="Climate: #{@country.weather}" %>
-</div>
+        <div class="country-individual">
+            <%="Top Facts are: #{@country.top_facts}" %>
+            <p></p>
+            <%="Main highlights are: #{@country.highlights}" %>
+            <p></p>
+            <%="Climate: #{@country.weather}" %>
+        </div>
     </li>
+</ul>
 
+<hr>
+<ul>
+<li class="country-individual-li">
+    <div class="country-individual">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos necessitatibus perferendis officia consequuntur optio reiciendis excepturi ducimus vel repellat corporis, alias distinctio tempore corrupti dolor aliquam rem totam aut perspiciatis.
+    </div>
+</li>
+<li class="country-individual-li">
+    <div class="country-individual">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo praesentium, dignissimos tempora aperiam illum aspernatur nam debitis dicta impedit assumenda! Pariatur adipisci, asperiores fugiat dolor fugit commodi assumenda? Soluta, reiciendis?
+    </div>
+</li>
 
 </ul>
+
+<div class="autoplay">
+
+    <div>
+        <%= image_tag("panoramic-alhambra.jpg", :class => "autoplay") %>
+    </div>
+    <div>
+        <%= image_tag("panoramic-mountains.jpg", :class => "autoplay") %>
+    </div>
+
+    <div>
+        <%= image_tag("panoramic-alhambra.jpg", :class => "autoplay") %>
+    </div>
+    <div>
+        <%= image_tag("panoramic-alhambra.jpg", :class => "autoplay") %>
+    </div>
+    <div>
+        <%= image_tag("panoramic-alhambra.jpg", :class => "autoplay") %>
+    </div>
+
+    </div>
+
 
 <div class="controls">
     <% if @current_user == nil %>

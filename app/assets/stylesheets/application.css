@@ -99,3 +99,20 @@ footer{
   position: absolute;
   bottom: 0;
 }
+
+.slick-slider {
+max-width: 960px;
+margin: 0 auto;
+}
+
+.slick-slide {
+  margin: 0 auto;
+  width: 960px;
+  max-width: 960px;
+  text-align: center;
+}
+
+.autoplay img {
+  height: 100%;
+  width: 100%;
+}
