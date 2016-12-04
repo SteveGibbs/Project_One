@@ -119,6 +119,9 @@ h1 {
 }
   footer {
     font-size: 10px;
-    margin-bottom: 0px;
   }
+
+body.pages.home footer {
+  margin-bottom: -200px;
+}
 }
