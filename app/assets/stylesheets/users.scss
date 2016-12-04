@@ -52,4 +52,8 @@ input[id*='country'], input[id*='city'], input[id*='tour'], input[id*='user'], i
   form#new_user.new_user {
     width: auto;
   }
+
+  label, input {
+    font-size: 14px;
+  }
   }
