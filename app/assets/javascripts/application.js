@@ -17,7 +17,9 @@
 //= require_tree .
 
 $('document').ready(function(){
-
+    // if ($('.autoplay').length!==0){
+        // $('.autoplay').slick();
+    // }
   // CAROUSEL SLIDER FROM SLICK
     $('.autoplay').slick({
       slidesToShow: 4,
@@ -29,5 +31,12 @@ $('document').ready(function(){
 
     $('.slick-prev').html('<');
     $('.slick-next').html('>');
+
+
+//     $('.autoplay').on('init', function(event, slick){
+//     console.log("initialized");
+//     $('.autoplay').slick();
+// });
+
 
 });

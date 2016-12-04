@@ -146,8 +146,8 @@ p.country-main-p {
   }
 
   [class*="country-image"] img {
-    height: 213.3px;
     width: 320px;
+    height: 213.3px;
   }
 
   [class*="country-text"] {
@@ -155,15 +155,18 @@ p.country-main-p {
     height: 213.3px;
     line-height: 213.3px;
   }
-
+// .country-main-style{
+//   width: 540px;
+// }
 .country-individual img {
-  width: 378px;
-  height: 264.6px;
+  width: 540px;
+  height: 360px;
 }
 
 .country-individual {
-  width: 378px;
-  height: 264.6px;
+  width: 540px;
+  height: 360px;
+  text-align: justify;
 }
 
 .fix {

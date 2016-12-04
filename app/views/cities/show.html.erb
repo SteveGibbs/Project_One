@@ -1,8 +1,12 @@
 <h1></h1>
 <ul>
+    <div class="country-main-style">
     <li>
-        <h2><%= @city.name.upcase %></h2>
+
+        <h2 class="city-individual-header"><%= @city.name.upcase %></h2>
         <br>
+<div class="city-weather-header">
+
 
         <% if @city.country.name =="Germany" %>
         <% @country_code = "DE" %>
@@ -15,6 +19,8 @@
         <%= p "Weather: #{@weather["weather"].first["main"]}"%>
         <%= image_tag "http://openweathermap.org/img/w/#{ @weather["weather"].first["icon"] }.png", :size => "20x20", :class =>"icon" %>
         <br>
+</div>
+
         <div class="city-country-header">
             <% if @city.country %>
             <%= link_to(@city.country.name, @city.country) %>
@@ -46,6 +52,7 @@
             <%end  %>
         </div>
     </li>
+    </div>
 </ul>
 <hr>
 
