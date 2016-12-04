@@ -59,16 +59,7 @@ span.nav-logo {
     display: none;
   }
 }
-@media only screen and (max-width: 414px) {
-h1 {
-  font-size: 25px;
-}
 
-  footer {
-    font-size: 10px;
-    margin-bottom: 0;
-  }
-}
 
 a {
   margin-left: 30px;
@@ -88,10 +79,6 @@ li {
       /*height: 100%;*/
       position: relative;
 }
-
-/*.push-footer {
-  padding-bottom: 60px;
-}*/
 
 .footer-style {
   width: 100%;
@@ -124,4 +111,14 @@ margin: 0 auto;
 .autoplay img {
   height: 100%;
   width: 100%;
+}
+
+@media only screen and (max-width: 414px) {
+h1 {
+  font-size: 25px;
+}
+  footer {
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
 }
