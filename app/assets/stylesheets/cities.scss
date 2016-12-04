@@ -63,12 +63,14 @@ display: block;
   margin: 0;
   text-align: center;
 }
+.city-main-style {
+  text-align: center;
+}
 
 .city-image {
   width: 540px;
   height: 360px;
   position: relative;
-  // display: block;
   display: inline-block;
 }
 .city-image img {
@@ -111,7 +113,7 @@ display: block;
   line-height: 100%;
 }
 
-.cities li {
+.city-main-li, .city-individual-li, .city-attractions-li {
   display: inline-block;
   width: 580px;
 }
@@ -126,8 +128,13 @@ display: block;
   text-align: left;
 }
 
+.city-individual p {
+  text-align: justify;
+  width: 540px;
+}
+
 @media only screen and (max-width: 1024px) {
-  .cities li {
+  .city-main-li {
     display: inline-block;
     width: 325px;
   }
@@ -153,11 +160,12 @@ display: block;
   }
 }
 
-@media only screen and (max-width: 375px) {
-  .cities li {
+@media only screen and (max-width: 414px) {
+  .city-main-li {
     display: inline-block;
     width: 142px;
   }
+
 
   .city-style {
     width: 142px;
@@ -183,5 +191,13 @@ display: block;
     font-size: 30px;
     width: auto;
     text-align: center;
+  }
+
+  .city-attractions-li {
+    font-size: 10px;
+  }
+
+  .city-individual p {
+    width: 270px;
   }
 }

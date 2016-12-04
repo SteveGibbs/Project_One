@@ -1,7 +1,7 @@
 <h1></h1>
 <ul>
     <div class="country-main-style">
-    <li>
+    <li class="city-individual-li">
 
         <h2 class="city-individual-header"><%= @city.name.upcase %></h2>
         <br>
@@ -37,7 +37,7 @@
     </li>
     <br class="fix">
 
-    <li>
+    <li class=city-individual-li>
         <div class="country-individual">
             <%="Top Facts are: #{@city.top_facts}" %>
             <p></p>
@@ -60,13 +60,27 @@
     Explore <%=@city.name%> Attractions
 </h1>
 <ul>
-<li class="country-attractions-li">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut tenetur libero consequuntur veritatis quas ex rerum distinctio ad, nam officiis magni, nobis laboriosam assumenda nulla voluptatibus molestiae earum ea enim?
-</li>
-<li class="country-attractions-li">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum sint odit recusandae. Corporis sunt rem, hic deserunt, laboriosam repellendus ea soluta exercitationem blanditiis modi similique explicabo iure eius nobis nulla!
-</li>
+    <div class="city-main-style">
 
+
+<li class="city-attractions-li">
+    <div class="city-individual">
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut tenetur libero consequuntur veritatis quas ex rerum distinctio ad, nam officiis magni, nobis laboriosam assumenda nulla voluptatibus molestiae earum ea enim?
+        </p>
+
+    </div>
+
+</li>
+<li class="city-attractions-li">
+    <div class="city-individual">
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum sint odit recusandae. Corporis sunt rem, hic deserunt, laboriosam repellendus ea soluta exercitationem blanditiis modi similique explicabo iure eius nobis nulla!    
+        </p>
+
+    </div>
+</li>
+</div>
 </ul>
 
 <p></p>

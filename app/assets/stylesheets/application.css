@@ -59,7 +59,15 @@ span.nav-logo {
     display: none;
   }
 }
+@media only screen and (max-width: 414px) {
+h1 {
+  font-size: 25px;
+}
 
+  footer {
+    font-size: 10px;
+  }
+}
 
 a {
   margin-left: 30px;
