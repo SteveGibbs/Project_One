@@ -156,21 +156,25 @@ p.country-main-p {
     line-height: 213.3px;
   }
 // .country-main-style{
-//   width: 540px;
+//   width: 378px;
 // }
 .country-individual img {
-  width: 540px;
-  height: 360px;
+  width: 325px;
+  height: 227.55px;
 }
 
 .country-individual {
-  width: 540px;
-  height: 360px;
+  width: 325px;
+  height: 227.55px;
   text-align: justify;
 }
 
+.country-individual-li {
+  display: inline-block;
+  width: 750px;
+}
 .fix {
-  display: inline;
+  display: inline-block;
 }
 
 }
