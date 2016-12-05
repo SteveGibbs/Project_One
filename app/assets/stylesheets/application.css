@@ -42,24 +42,15 @@ nav {
 nav:hover {
   background-color: gray;
 }
-
 span.nav-logo {
   margin-left: auto;
-        margin-right: auto;
-        display: block;
-        text-align: center;
-        margin-top: -60px;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  margin-top: -60px;
   font-size: 25px;
   font-weight: bold;
 }
-
-@media only screen and (max-width: 1500px)
-{
-  span.nav-logo {
-    display: none;
-  }
-}
-
 
 a {
   margin-left: 30px;
@@ -73,18 +64,15 @@ a:hover {
 li {
   list-style-type: none;
 }
-
 .container {
-      min-height: 100%;
-      /*height: 100%;*/
-      position: relative;
+  min-height: 100%;
+  /*height: 100%;*/
+  position: relative;
 }
-
 .footer-style {
   width: 100%;
 }
-
-footer{
+footer {
   background-color: #ccccb3;
   color: darkslategray;
   margin-bottom: -120px;
@@ -95,33 +83,35 @@ footer{
   position: absolute;
   bottom: 0;
 }
-
 .slick-slider {
-max-width: 960px;
-margin: 0 auto;
+  max-width: 960px;
+  margin: 0 auto;
 }
-
 .slick-slide {
   margin: 0 auto;
   width: 960px;
   max-width: 960px;
   text-align: center;
 }
-
 .autoplay img {
   height: 100%;
   width: 100%;
 }
 
-@media only screen and (max-width: 568px) {
-h1 {
-  font-size: 25px;
+@media only screen and (max-width: 1500px) {
+  span.nav-logo {
+    display: none;
+  }
 }
+
+@media only screen and (max-width: 568px) {
+  h1 {
+    font-size: 25px;
+  }
   footer {
     font-size: 10px;
   }
-
-body.pages.home footer {
-  margin-bottom: -230px;
-}
+  body.pages.home footer {
+    margin-bottom: -40px;
+  }
 }

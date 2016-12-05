@@ -1,245 +1,200 @@
 // Place all the styles related to the Countries controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
 .new_country {
     margin: 0 auto;
 }
 .edit_country {
     margin: 0 auto;
 }
-
 .country-style {
-  width: 378px;
-  height: 264.6px;
-  position: relative;
-  padding: 0;
-  margin: 0;
-  text-align: center;
+    width: 378px;
+    height: 264.6px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
-
 .country-main-style {
-text-align: center;
-
+    text-align: center;
 }
-
 [class*="country-image"] {
-  width: 378px;
-  height: 264.6px;
-  position: relative;
-  display: inline-block;
-}
-
-[class*="country-image"] img {
-  height: 100%;
-  width: 100%;
-}
-
-[class*="country-text"] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 378px;
-  height: 264.6px;
-  text-align: center;
-  background-color: rgba(0,0,0,0.8);
-  opacity: 0;
-  transition: opacity 0.6s;
-  vertical-align: middle;
-  display: inline-table;
-  line-height: 264.6px;
-}
-
-[class*="country-text"] a {
-  padding: 0;
-}
-
-[class*="country-text"]:hover {
-  opacity: 1;
-}
-
-[class*="country-text"] a:hover {
-  color: white;
-  padding: 0;
-}
-
-.country-text-tour {
-  opacity: 1;
-  background-color: rgba(0,0,0,0);
-}
-
-div.country-text-tour a {
-  color: white;
-  position: bottom;
-}
-
-
-.country-text-tour a:hover {
-  color: black;
-}
-
-[class*="country-text"] h3 {
-  display: inline-table;
-  vertical-align: middle;
-  line-height: 100%;
-}
-
-
-.country-main-li {
-  text-align: center;
-  display: inline-block;
-  width: 380px;
-}
-
-.country-individual-li {
-  text-align: center;
-  display: inline-block;
-  width: 580px;
-  height:auto;
-}
-
-h1 {
-  color: #039be5;
-  font-family: "Acme";
-  font-size: 48px;
-  text-align: center;
-}
-
-.country-individual img {
-  height: 360px;
-  width: 540px;
-}
-
-.country-individual {
-  width: 550px;
-  height: auto;
-  text-align: left;
-}
-
-p.country-main-p {
-  text-align: justify;
-  font-size: 12px;
-  margin: 3px;
-}
-
-
-.fix {
-  display: none;
-}
-
-@media only screen and (max-width: 1024px) {
-
-  .country-main-li {
+    width: 378px;
+    height: 264.6px;
+    position: relative;
     display: inline-block;
-    width: 325px;
-  }
-
-  .country-individual-li{
+}
+[class*="country-image"] img {
+    height: 100%;
+    width: 100%;
+}
+[class*="country-text"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 378px;
+    height: 264.6px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0;
+    transition: opacity 0.6s;
+    vertical-align: middle;
+    display: inline-table;
+    line-height: 264.6px;
+}
+[class*="country-text"] a {
+    padding: 0;
+}
+[class*="country-text"]:hover {
+    opacity: 1;
+}
+[class*="country-text"] a:hover {
+    color: white;
+    padding: 0;
+}
+.country-text-tour {
+    opacity: 1;
+    background-color: rgba(0,0,0,0);
+}
+div.country-text-tour a {
+    color: white;
+    position: bottom;
+}
+.country-text-tour a:hover {
+    color: black;
+}
+[class*="country-text"] h3 {
+    display: inline-table;
+    vertical-align: middle;
+    line-height: 100%;
+}
+.country-main-li {
+    text-align: center;
+    display: inline-block;
+    width: 380px;
+}
+.country-individual-li {
+    text-align: center;
     display: inline-block;
     width: 580px;
-
-  }
-  .country-style {
-    width: 320px;
-    height: 213.3px;
-  }
-
-  [class*="country-image"] {
-    width: 320px;
-    height: 213.3px;
-  }
-
-  [class*="country-image"] img {
-    width: 320px;
-    height: 213.3px;
-  }
-
-  [class*="country-text"] {
-    width: 320px;
-    height: 213.3px;
-    line-height: 213.3px;
-  }
-
-.country-individual img {
-  width: 580px;
-  height: 325px;
+    height: auto;
 }
-
-.country-individual {
-  width: 580px;
-  height: auto;
-  text-align: justify;
-}
-
-.fix {
-  display: inline-block;
-}
-.header-style-city-tour {
-  text-align: left;
-  font-size: 20px;
-}
-
-}
-
-@media only screen and (max-width: 414px) {
-  .country-main-li {
-    display: inline-block;
-    width: 142px;
-  }
-
-  .country-individual-li{
-    display: inline-block;
-    width: 270px;
-  }
-
-  .country-style {
-    width: 142px;
-    height: 96px;
-  }
-
-  .country-main-p {
-    font-size: 10px;
-  }
-
-  [class*="country-image"] {
-    width: 142px;
-    height: 96px;
-  }
-
-  [class*="country-image"] img {
-    height: 96px;
-    width: 142px;
-  }
-  [class*="country-text"] {
-    width: 142px;
-    height: 96px;
-    line-height: 96px;
-  }
-.country-individual img {
-  width: 270px;
-  height: 180px;
-}
-.country-individual {
-  width: 270px;
-  height: auto;
-  font-size: 10px;
-}
-
-[class*="country-text"] h3 {
-  font-size: 12px;
-}
-
-.fix {
-  display: inline;
-}
-
 h1 {
-  font-size: 30px;
+    color: #039be5;
+    font-family: "Acme";
+    font-size: 48px;
+    text-align: center;
 }
-
-.header-style-city-tour a {
-  font-size: 18px;
+.country-individual img {
+    height: 360px;
+    width: 540px;
 }
+.country-individual {
+    width: 550px;
+    height: auto;
+    text-align: left;
+}
+p.country-main-p {
+    text-align: justify;
+    font-size: 12px;
+    margin: 3px;
+}
+.fix {
+    display: none;
+}
+@media only screen and (max-width: 1024px) {
+    .country-main-li {
+        display: inline-block;
+        width: 325px;
+    }
+    .country-individual-li {
+        display: inline-block;
+        width: 580px;
+    }
+    .country-style {
+        width: 320px;
+        height: 213.3px;
+    }
+    [class*="country-image"] {
+        width: 320px;
+        height: 213.3px;
+    }
+    [class*="country-image"] img {
+        width: 320px;
+        height: 213.3px;
+    }
+    [class*="country-text"] {
+        width: 320px;
+        height: 213.3px;
+        line-height: 213.3px;
+    }
+    .country-individual img {
+        width: 580px;
+        height: 325px;
+    }
+    .country-individual {
+        width: 580px;
+        height: auto;
+        text-align: justify;
+    }
+    .fix {
+        display: inline-block;
+    }
+    .header-style-city-tour {
+        text-align: left;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .country-main-li {
+        display: inline-block;
+        width: 142px;
+    }
+    .country-individual-li {
+        display: inline-block;
+        width: 270px;
+    }
+    .country-style {
+        width: 142px;
+        height: 96px;
+    }
+    .country-main-p {
+        font-size: 10px;
+    }
+    [class*="country-image"] {
+        width: 142px;
+        height: 96px;
+    }
+    [class*="country-image"] img {
+        height: 96px;
+        width: 142px;
+    }
+    [class*="country-text"] {
+        width: 142px;
+        height: 96px;
+        line-height: 96px;
+    }
+    .country-individual img {
+        width: 270px;
+        height: 180px;
+    }
+    .country-individual {
+        width: 270px;
+        height: auto;
+        font-size: 10px;
+    }
+    [class*="country-text"] h3 {
+        font-size: 12px;
+    }
+    .fix {
+        display: inline;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .header-style-city-tour a {
+        font-size: 18px;
+    }
 }
