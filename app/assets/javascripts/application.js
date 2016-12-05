@@ -16,10 +16,14 @@
 //= require materialize-sprockets
 //= require_tree .
 
-$('document').ready(function(){
+
+$(document).on("turbolinks:load", function(){
     // if ($('.autoplay').length!==0){
-        // $('.autoplay').slick();
+    //     console.log("time to initialise slick");
+    //     $('.autoplay').slick();
     // }
+    //
+
   // CAROUSEL SLIDER FROM SLICK
     $('.autoplay').slick({
       slidesToShow: 4,
@@ -38,5 +42,7 @@ $('document').ready(function(){
 //     $('.autoplay').slick();
 // });
 
+console.log("which initialiser ran");
+$('.autoplay').slick();
 
 });
