@@ -18,11 +18,6 @@
 
 
 $(document).on("turbolinks:load", function(){
-    // if ($('.autoplay').length!==0){
-    //     console.log("time to initialise slick");
-    //     $('.autoplay').slick();
-    // }
-    //
 
   // CAROUSEL SLIDER FROM SLICK
     $('.autoplay').slick({
@@ -36,13 +31,5 @@ $(document).on("turbolinks:load", function(){
     $('.slick-prev').html('<');
     $('.slick-next').html('>');
 
-
-//     $('.autoplay').on('init', function(event, slick){
-//     console.log("initialized");
-//     $('.autoplay').slick();
-// });
-
-console.log("which initialiser ran");
-$('.autoplay').slick();
 
 });

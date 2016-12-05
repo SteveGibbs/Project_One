@@ -91,7 +91,7 @@ form.search {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
 
 h1.header {
   font-size: 40px;
@@ -125,8 +125,28 @@ select#_tour_id {
     color: black;
     font-size: 10px;
   }
+  body.pages.home {
+      background-size: 900px;
+      background-position: -400px 0;
+  }
+
 }
 
 body.pages.home footer {
   margin-bottom: -60px;
+}
+
+@media only screen and (max-width: 414px) {
+  body.pages.home {
+      background-size: 1200px;
+      background-position: 100px 0;
+  }
+
+}
+@media only screen and (max-width: 736px) {
+  body.pages.home {
+      background-size: 1200px;
+      background-position: -350px -80px;
+  }
+
 }
