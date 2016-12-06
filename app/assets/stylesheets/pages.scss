@@ -116,8 +116,8 @@ body.pages.home footer {
         color: black;
         font-size: 10px;
     }
-
 }
+
 @media only screen and (max-width: 414px) {
     h1.header {
         font-size: 40px;
@@ -145,7 +145,7 @@ body.pages.home footer {
         color: black;
         font-size: 10px;
     }
-    body.pages.home
+    body.pages.home {
         background-size: cover;
         background-attachment: fixed;
         background-position: center center;
