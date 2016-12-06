@@ -95,10 +95,28 @@ body.pages.home footer {
         background-attachment: fixed;
         background-position: center center;
         background-attachment: scroll;
-
-        // background-size: 1200px;
-        // background-position: -350px -80px;
     }
+    form.search {
+        width: 200px;
+        display: block;
+    }
+    select#_tour_id {
+        max-width: 160px;
+    }
+    .search label {
+        font-size: 14px;
+        width: 90px;
+        margin-left: -10px;
+    }
+    .search select {
+        width: 140px;
+        padding-bottom: 16px;
+    }
+    .submit_format1 {
+        color: black;
+        font-size: 10px;
+    }
+
 }
 @media only screen and (max-width: 414px) {
     h1.header {
@@ -127,13 +145,10 @@ body.pages.home footer {
         color: black;
         font-size: 10px;
     }
-    body.pages.home {
-        // background-size: 450%;
-        // background-position: -600px 30px;
+    body.pages.home
         background-size: cover;
         background-attachment: fixed;
         background-position: center center;
         background-attachment: scroll;
-
     }
 }
