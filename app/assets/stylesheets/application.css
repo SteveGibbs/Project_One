@@ -116,3 +116,7 @@ footer {
     margin-bottom: -260px;
   }
 }
+
+body.pages.home span.nav-logo {
+  display:none;
+}
