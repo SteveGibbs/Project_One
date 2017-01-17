@@ -67,54 +67,46 @@ form.search {
     font-size: 14px;
     margin-left: 24px;
 }
-
 body.pages.home footer {
     margin-bottom: -60px;
 }
-
 h1.parallax-bottom-space {
-  font-size: 28px;
-  font-family: "Lato";
-  color: black;
-  height: 220px;
-  background-color: lightslategray;
+    font-size: 28px;
+    font-family: "Lato";
+    color: black;
+    height: 220px;
+    background-color: lightslategray;
 }
-
 p.parallax-bottom-space {
-  margin-left: 10%;
-  margin-right: 10%;
-  text-align: center;
-  font-size: 16px;
-  font-family: "Lato";
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Lato";
 }
-
 .parallax-view {
-  background: image-url("europe.jpg") fixed 100% center;
+    background: image-url("europe.jpg") fixed 100% center;
 }
-
 .parallax-text {
-  margin-top: -5px;
-  height: 900px;
+    margin-top: -5px;
+    height: 900px;
 }
-
-body.pages.home_alt, html.pages.home_alt {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  height: 100%;
-  background-color: lightslategray;
+body.pages.home_alt,
+html.pages.home_alt {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 1200px;
+    background-color: lightslategray;
 }
-
 body.pages.home_alt footer {
     margin-bottom: 0;
     position: fixed;
 }
-
 body.pages.home_alt div.container {
-  min-height: 0%;
-  height: 0px;
+    min-height: 0;
+    height: 0;
 }
-
 @media only screen and (max-width: 1024px) {
     form.search {
         max-width: 550px;
@@ -141,7 +133,6 @@ body.pages.home_alt div.container {
         background-position: center center;
         background-attachment: scroll;
     }
-
     form.search {
         width: 300px;
         display: block;
@@ -163,22 +154,16 @@ body.pages.home_alt div.container {
         font-size: 10px;
     }
     h1.parallax-bottom-space {
-      font-size: 20px;
-      // font-family: "Lato";
-      // color: black;
-      // height: 220px;
-      // background-color: lightslategray;
+        font-size: 18px;
     }
     p.parallax-bottom-space {
-      // margin-left: 10%;
-      // margin-right: 10%;
-      // text-align: center;
-      font-size: 12px;
-      // font-family: "Lato";
+        font-size: 12px;
     }
-
+    .parallax-text {
+        margin-top: -5px;
+        height: 600px;
+    }
 }
-
 @media only screen and (max-width: 414px) {
     h1.header {
         font-size: 40px;
@@ -212,5 +197,8 @@ body.pages.home_alt div.container {
         background-position: center center;
         background-attachment: scroll;
     }
-  
+    .parallax-text {
+        margin-top: -5px;
+        height: 600px;
+    }
 }
