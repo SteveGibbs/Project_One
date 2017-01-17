@@ -53,7 +53,7 @@ span.nav-logo {
 }
 
 a {
-  margin-left: 30px;
+  /*margin-left: 30px;*/
   padding-left: 15px;
   height: 100%;
   text-align: center;
@@ -61,6 +61,16 @@ a {
 a:hover {
   color: black;
 }
+
+.navbar {
+  margin-left: 30px;
+}
+
+.navbar2 {
+  margin-left: 30px;
+  margin-right: 700px;
+}
+
 li {
   list-style-type: none;
 }
@@ -98,6 +108,10 @@ footer {
 }
 
 body.pages.home span.nav-logo {
+  display:none;
+}
+
+body.pages.home_alt span.nav-logo {
   display:none;
 }
 

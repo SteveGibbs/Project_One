@@ -30,19 +30,19 @@
 
 
   <nav>
-<%= link_to("Home", pages_home_path()) %>
-<%= link_to "Countries", "/countries" %>
-<%= link_to "Cities", "/cities" %>
-<%= link_to "Tours", "/tours" %>
+<%= link_to("Home", pages_home_alt_path(), :class => "navbar") %>
+<%= link_to("Countries", "/countries", :class => "navbar")%>
+<%= link_to("Cities", "/cities", :class => "navbar") %>
+<%= link_to("Tours", "/tours", :class => "navbar") %>
 
   <% unless @current_user.present? %>
-  <%= link_to("Login", login_path()) %>
-  <%= link_to("SignUp", new_user_path()) %>
+  <%= link_to("Login", login_path(), :class => "navbar") %>
+  <%= link_to("SignUp", new_user_path(), :class => "navbar") %>
   <%else %>
-  <%= link_to("Edit your profile", edit_user_path(@current_user.id)) %>
-  <%= link_to("Log out #{@current_user.first_name} #{@current_user.last_name}", logout_path(), :method => :delete) %>
-
+  <%= link_to("Edit your profile", edit_user_path(@current_user.id), :class => "navbar") %>
+  <%= link_to("Log out #{@current_user.first_name} #{@current_user.last_name}", logout_path(), :method => :delete, :class => "navbar2") %>
   You are logged in as <%= ("#{@current_user.first_name} #{@current_user.last_name}") %>
+
   <% end %>
 
   <span class="nav-logo">Remarkable Voyages</span>

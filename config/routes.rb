@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   get 'pages/home' => "pages#home"
-
+get 'pages/home_alt' => "pages#home_alt"
   get '/results' => 'pages#results'
 
   get 'pages/about'
@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'pages/faq'
 
   # root "users#index"
-  root "pages#home"
+  root "pages#home_alt"
   get "/users/edit" => 'users#edit', :as => "edit_user"
   resources :users, :except => [:edit]
   resources :countries, :cities, :tours
