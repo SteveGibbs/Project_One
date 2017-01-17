@@ -72,15 +72,7 @@ body.pages.home footer {
     margin-bottom: -60px;
 }
 
-// .parallax-bottom-space {
-//   // margin-top: 15%
-// }
-
 h1.parallax-bottom-space {
-  // text-align: top;
-  // margin-top: -150px;
-  // margin-top: 25%;
-  /*45% top and bottom margin and 0% left and right*/
   font-size: 28px;
   font-family: "Lato";
   color: black;
@@ -122,10 +114,6 @@ body.pages.home_alt div.container {
   height: 0px;
 }
 
-// body.pages.home_alt div.push-footer {
-//   height: 0;
-// }
-
 @media only screen and (max-width: 1024px) {
     form.search {
         max-width: 550px;
@@ -152,6 +140,8 @@ body.pages.home_alt div.container {
         background-position: center center;
         background-attachment: scroll;
     }
+  
+
     form.search {
         width: 300px;
         display: block;

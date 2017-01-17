@@ -41,7 +41,10 @@
   <%else %>
   <%= link_to("Edit your profile", edit_user_path(@current_user.id), :class => "navbar") %>
   <%= link_to("Log out #{@current_user.first_name} #{@current_user.last_name}", logout_path(), :method => :delete, :class => "navbar2") %>
+<span class="user-nav">
   You are logged in as <%= ("#{@current_user.first_name} #{@current_user.last_name}") %>
+
+</span>
 
   <% end %>
 
