@@ -76,7 +76,7 @@ h1.parallax-bottom-space {
   font-size: 28px;
   font-family: "Lato";
   color: black;
-  height: 200px;
+  height: 220px;
   background-color: lightslategray;
 }
 
@@ -101,6 +101,7 @@ body.pages.home_alt, html.pages.home_alt {
   margin: 0;
   padding: 0;
   border: 0;
+  height: 100%;
   background-color: lightslategray;
 }
 
@@ -140,7 +141,6 @@ body.pages.home_alt div.container {
         background-position: center center;
         background-attachment: scroll;
     }
-  
 
     form.search {
         width: 300px;
@@ -162,6 +162,21 @@ body.pages.home_alt div.container {
         color: black;
         font-size: 10px;
     }
+    h1.parallax-bottom-space {
+      font-size: 20px;
+      // font-family: "Lato";
+      // color: black;
+      // height: 220px;
+      // background-color: lightslategray;
+    }
+    p.parallax-bottom-space {
+      // margin-left: 10%;
+      // margin-right: 10%;
+      // text-align: center;
+      font-size: 12px;
+      // font-family: "Lato";
+    }
+
 }
 
 @media only screen and (max-width: 414px) {
@@ -197,4 +212,5 @@ body.pages.home_alt div.container {
         background-position: center center;
         background-attachment: scroll;
     }
+  
 }

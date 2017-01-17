@@ -83,7 +83,7 @@ li {
 footer {
   background-color: #ccccb3;
   color: darkslategray;
-  margin-bottom: -120px;
+  margin-bottom: -80px;
   height: auto;
   left: 0;
   min-width: 100% !important;
@@ -128,16 +128,12 @@ body.pages.home_alt span.nav-logo {
   footer {
     font-size: 10px;
   }
-  body.pages.home footer {
-    margin-bottom: -260px;
-  }
+  
   .navbar {
     margin-left: 15px;
   }
-
   .navbar2 {
     margin-left: 15px;
     margin-right: 0;
   }
-
 }
