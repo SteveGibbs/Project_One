@@ -154,15 +154,14 @@ body.pages.home_alt div.container {
         height: 600px;
     }
 }
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 568px) {
     h1.header {
         font-size: 40px;
     }
-    nav {
-        height: auto;
-    }
+
+
     form.search {
-        width: 380px;
+        width: 200px;
         display: block;
     }
     .search label {

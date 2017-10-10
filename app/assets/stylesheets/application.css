@@ -143,3 +143,26 @@ body.pages.home_alt span.nav-logo {
     margin-right: 0;
   }
 }
+
+@media only screen and (max-width: 568px) {
+  h1 {
+    font-size: 20px;
+  }
+  footer {
+    font-size: 10px;
+  }
+  .navbar{
+    font-size: 12px;
+    padding: 0;
+  }
+
+  nav{
+    height: auto;
+    line-height: 32px;
+  }
+
+  .navbar2 {
+    margin-left: 5px;
+    margin-right: 0;
+  }
+}
