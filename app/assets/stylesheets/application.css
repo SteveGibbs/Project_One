@@ -15,7 +15,7 @@
  */
 
 html, body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: "Lato";
   background-color: #F4F8F6;
@@ -24,8 +24,9 @@ html, body {
 body select {
   display: inline;
   width: auto;
+  margin: 0 auto;
+  padding: 0;
   font-size: 16px;
-  margin-top: 4%;
 }
 body .input-field {
   display: inline;
@@ -36,24 +37,18 @@ nav {
   background-color: lightslategray;
   font-size: 16px;
   width: 100%;
-  margin: 0 auto;
-  padding: 0;
-}
+  }
 nav:hover {
   background-color: gray;
 }
 span.nav-logo {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  text-align: center;
-  margin-top: -60px;
+  margin-left: 3%;
+  padding-right: 25%;
+  text-align: left;
   font-size: 25px;
   font-weight: bold;
 }
-
 a {
-  padding-left: 15px;
   height: 100%;
   text-align: center;
 }
@@ -62,17 +57,25 @@ a:hover {
 }
 
 .navbar {
-  margin-left: 30px;
+  margin: 20px;
 }
 
 .navbar2 {
   margin-left: 30px;
-  margin-right: 35%;
 }
 
 li {
   list-style-type: none;
 }
+label {
+
+  margin-left: 50px;
+  color: black;
+  font-size: 16px;
+  display: inline-block;
+
+}
+
 .container {
   min-height: 100%;
   position: relative;
@@ -115,8 +118,11 @@ body.pages.home_alt span.nav-logo {
 }
 
 @media only screen and (max-width: 1500px) {
-  span.nav-logo, span.user-nav {
+  span.nav-logo {
     display: none;
+  }
+  .navbar{
+    padding: 20px;
   }
 }
 
@@ -128,10 +134,10 @@ body.pages.home_alt span.nav-logo {
   footer {
     font-size: 10px;
   }
-  
-  .navbar {
-    margin-left: 15px;
+  .navbar{
+    padding: 10px;
   }
+
   .navbar2 {
     margin-left: 15px;
     margin-right: 0;

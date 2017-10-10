@@ -30,7 +30,9 @@
 
 
   <nav>
-<%= link_to("Home", pages_home_alt_path(), :class => "navbar") %>
+  <div class="center">
+ <span class="nav-logo">Remarkable Voyages</span>
+<%= link_to("Home", pages_home_alt_path, :class => "navbar") %>
 <%= link_to("Countries", "/countries", :class => "navbar")%>
 <%= link_to("Cities", "/cities", :class => "navbar") %>
 <%= link_to("Tours", "/tours", :class => "navbar") %>
@@ -40,29 +42,18 @@
   <%= link_to("SignUp", new_user_path(), :class => "navbar") %>
   <%else %>
   <%= link_to("Edit your profile", edit_user_path(@current_user.id), :class => "navbar") %>
-  <%= link_to("Log out #{@current_user.first_name} #{@current_user.last_name}", logout_path(), :method => :delete, :class => "navbar2") %>
-<span class="user-nav">
-  You are logged in as <%= ("#{@current_user.first_name} #{@current_user.last_name}") %>
-
-</span>
-
+  <%= link_to("Log out #{@current_user.first_name} #{@current_user.last_name}", logout_path, :method => :delete, :class => "navbar2") %>
   <% end %>
+  </div>
 
-  <span class="nav-logo">Remarkable Voyages</span>
   </nav>
 
 
 <div class="container">
 
-
-
-
-
   <div class="push-footer">
     <br>
   </div>
-
-
 
   <%= yield %>
 
@@ -70,12 +61,7 @@
     <p class="footer-style">Remarkable Voyages is a simple travel website created as an educational project for General Assembly's Web Development Immersive Course by Stephen Gibbs</p>
   </footer>
 
-
-
   </div>
-
-
-
 
 
 </body>

@@ -57,11 +57,10 @@ form.search {
     color: white;
     width: auto;
     height: auto;
-    padding-bottom: 30px;
+    padding: 20px;
+    margin: 0;
 }
-.search select {
-    padding-bottom: 20px;
-}
+
 .submit_format1 {
     color: black;
     font-size: 14px;
@@ -107,16 +106,13 @@ body.pages.home_alt div.container {
     min-height: 0;
     height: 0;
 }
-@media only screen and (max-width: 1024px) {
-    form.search {
-        max-width: 550px;
-    }
+@media only screen and (max-width: 1268px) {
     .search label {
         font-size: 16px;
     }
-    .search select {
-        padding-bottom: 20px;
-    }
+}
+@media only screen and (max-width: 1024px) {
+
     .submit_format1 {
         color: black;
         font-size: 12px;
@@ -125,7 +121,12 @@ body.pages.home_alt div.container {
         background-size: 1800px;
         background-position: -600px 0;
     }
+    select#_tour_id {
+        max-width: 160px;
+    }
+
 }
+
 @media only screen and (max-width: 736px) {
     body.pages.home {
         background-size: cover;
@@ -133,22 +134,11 @@ body.pages.home_alt div.container {
         background-position: center center;
         background-attachment: scroll;
     }
-    form.search {
-        width: 300px;
-        display: block;
-    }
+
     select#_tour_id {
         max-width: 160px;
     }
-    .search label {
-        font-size: 14px;
-        width: 90px;
-        margin-left: -10px;
-    }
-    .search select {
-        width: 140px;
-        padding-bottom: 16px;
-    }
+
     .submit_format1 {
         color: black;
         font-size: 10px;
@@ -172,21 +162,17 @@ body.pages.home_alt div.container {
         height: auto;
     }
     form.search {
-        width: auto;
+        width: 380px;
         display: block;
     }
-    select#_tour_id {
-        max-width: 160px;
-    }
     .search label {
-        font-size: 14px;
-        width: 90px;
-        margin-left: -10px;
+        font-size: 12px;
     }
-    .search select {
-        width: 140px;
-        padding-bottom: 16px;
+
+    select#_tour_id {
+        max-width: 100px;
     }
+
     .submit_format1 {
         color: black;
         font-size: 10px;
