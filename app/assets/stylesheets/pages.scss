@@ -161,15 +161,25 @@ body.pages.home_alt div.container {
 
 
     form.search {
-        width: 200px;
+        width: 224px;
         display: block;
     }
     .search label {
         font-size: 12px;
+        padding: 20px;
+        margin-left: -18px;
+        width: 86px;
     }
 
+    select#_country_id {
+        width: 100px;
+    }
+
+    select#_city_id {
+        width: 100px;
+    }
     select#_tour_id {
-        max-width: 100px;
+        width: 100px;
     }
 
     .submit_format1 {
