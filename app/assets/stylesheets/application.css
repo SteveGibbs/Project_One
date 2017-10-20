@@ -96,14 +96,34 @@ footer {
 }
 .slick-slider {
   max-width: 960px;
+  height: 320px;
   margin: 0 auto;
 }
 .slick-slide {
   margin: 0 auto;
-  width: 960px;
   max-width: 960px;
+  height: 320px;
   text-align: center;
 }
+
+button.slick-prev.slick-arrow{
+  position: absolute;
+  top: 130px;
+  left: 10px;
+  opacity: 0.5;
+  font-size: 30px;
+  z-index: 1;
+}
+
+button.slick-next.slick-arrow{
+  position: absolute;
+  right: 10px;
+  top: 130px;
+  opacity: 0.5;
+  font-size: 30px;
+  z-index: 1;
+}
+
 .autoplay img {
   height: 100%;
   width: 100%;
