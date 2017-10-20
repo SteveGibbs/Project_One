@@ -2,35 +2,5 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#tour_city_ids* {
-    background-color: red;
-}
-.tours li {
-    display: inline-block;
-    width: 380px;
-}
-@media only screen and (max-width: 1024px) {
-    .tours li {
-        display: inline-block;
-        width: 325px;
-    }
-    h5 {
-        font-size: 16px;
-    }
-}
-@media only screen and (max-width: 414px) {
-    .tours li {
-        display: inline-block;
-        width: 142px;
-    }
 
-    h4, h5 {
-        font-size: 16px;
-    }
-    .tours p {
-        display: none;
-    }
-    .tours a {
-        text-align: center;
-    }
-}
+

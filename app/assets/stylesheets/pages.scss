@@ -73,7 +73,8 @@ h1.parallax-bottom-space {
     font-size: 28px;
     font-family: "Lato";
     color: black;
-    height: 220px;
+    padding: 20px;
+    height: auto;
     background-color: lightslategray;
 }
 p.parallax-bottom-space {
@@ -95,13 +96,16 @@ html.pages.home_alt {
     margin: 0;
     padding: 0;
     border: 0;
-    height: 1200px;
+    height: auto;
     background-color: lightslategray;
 }
+/*
 body.pages.home_alt footer {
     margin-bottom: 0;
     position: fixed;
 }
+
+*/
 body.pages.home_alt div.container {
     min-height: 0;
     height: 0;
@@ -149,6 +153,7 @@ body.pages.home_alt div.container {
     p.parallax-bottom-space {
         font-size: 12px;
     }
+
     .parallax-text {
         margin-top: -5px;
         height: 600px;

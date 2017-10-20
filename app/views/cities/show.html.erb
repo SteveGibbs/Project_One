@@ -54,42 +54,37 @@
 </ul>
 <hr>
 
-<h1 class="city-attractions">
+<h3 class="header--city-center">
     Explore <%=@city.name%> Attractions
-</h1>
+</h3>
 <ul>
-    <div class="city-main-style">
+    <div class="container--grid">
+    <li class="container-medium">
+        <div class="container--innerbox-medium">
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut tenetur libero consequuntur veritatis quas ex rerum distinctio ad, nam officiis magni, nobis laboriosam assumenda nulla voluptatibus molestiae earum ea enim?
+            </p>
 
-
-<li class="container-medium">
-    <div class="container--innerbox-medium">
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut tenetur libero consequuntur veritatis quas ex rerum distinctio ad, nam officiis magni, nobis laboriosam assumenda nulla voluptatibus molestiae earum ea enim?
-        </p>
-
+        </div>
+    </li>
+    <li class="container-medium">
+        <div class="container--innerbox-medium">
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum sint odit recusandae. Corporis sunt rem, hic deserunt, laboriosam repellendus ea soluta exercitationem blanditiis modi similique explicabo iure eius nobis nulla!
+            </p>
+        </div>
+    </li>
     </div>
-
-</li>
-<li class="container-medium">
-    <div class="container--innerbox-medium">
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum sint odit recusandae. Corporis sunt rem, hic deserunt, laboriosam repellendus ea soluta exercitationem blanditiis modi similique explicabo iure eius nobis nulla!    
-        </p>
-
-    </div>
-</li>
-</div>
 </ul>
 
-<p></p>
-<p></p>
-<div class="controls">
-    <% if @current_user == nil %>
-    <% %>
-    <%elsif @current_user.admin.to_s == "true"  %>
-    <%= link_to "Edit city", edit_city_path(@city.id) %>
-    <%= link_to "Delete city", @city, :method => :delete, :data => { :confirm => "Please confirm?"} %>
-    <%end %>
-</div>
-<p></p>
-<p></p>
+ <div class="controls controls-center">
+            <% if @current_user == nil %>
+            <% %>
+            <%elsif @current_user.admin.to_s == "true"  %>
+            <%= link_to "Edit city", edit_city_path(@city.id) %>
+            <%= link_to "Delete city", @city, :method => :delete, :data => { :confirm => "Please confirm?"} %>
+            <%end %>
+
+ </div>
+ <br>
+

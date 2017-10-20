@@ -36,19 +36,17 @@
     <div class="container--grid">
 
 
-<li class="container-medium">
-    <div class="container--innerbox-medium">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos necessitatibus perferendis officia consequuntur optio reiciendis excepturi ducimus vel repellat corporis, alias distinctio tempore corrupti dolor aliquam rem totam aut perspiciatis.
-    <p></p>
-
+    <li class="container-medium">
+        <div class="container--innerbox-medium">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos necessitatibus perferendis officia consequuntur optio reiciendis excepturi ducimus vel repellat corporis, alias distinctio tempore corrupti dolor aliquam rem totam aut perspiciatis.
+        </div>
+    </li>
+    <li class="container-medium">
+        <div class="container--innerbox-medium">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo praesentium, dignissimos tempora aperiam illum aspernatur nam debitis dicta impedit assumenda! Pariatur adipisci, asperiores fugiat dolor fugit commodi assumenda? Soluta, reiciendis?
+        </div>
+    </li>
     </div>
-</li>
-<li class="container-medium">
-    <div class="container--innerbox-medium">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo praesentium, dignissimos tempora aperiam illum aspernatur nam debitis dicta impedit assumenda! Pariatur adipisci, asperiores fugiat dolor fugit commodi assumenda? Soluta, reiciendis?
-    </div>
-</li>
-</div>
 </ul>
 
 <div class="autoplay">
@@ -72,8 +70,9 @@
 
     </div>
 
-
-<div class="controls">
+<br>
+<br>
+<div class="controls controls-center">
     <% if @current_user == nil %>
     <% %>
     <%elsif @current_user.admin.to_s == "true"  %>
@@ -81,3 +80,4 @@
     <%= link_to "Delete Country", @country, :method => :delete, :data => { :confirm => "Please confirm?"} %>
     <%end %>
 </div>
+<br>

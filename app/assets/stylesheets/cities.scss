@@ -6,6 +6,10 @@ select {
     margin-left: 50px;
 }
 
+select#city_country_id{
+    margin-left: 58%;
+}
+
 .edit_city label {
     height: 16px;
 }
@@ -44,9 +48,7 @@ input.submit_format {
     margin: 0;
     text-align: center;
 }
-.city-main-style {
-    text-align: center;
-}
+
 .image-medium {
     width: 540px;
     height: 360px;
@@ -92,7 +94,8 @@ input.submit_format {
     vertical-align: bottom !important;
 }
 
-.city-attractions {
+.header--city-center {
+    text-align: center;
     font-family: "Lato";
     font-size: 30px;
     color: black;
@@ -164,7 +167,7 @@ input.submit_format {
         font-size: 35px;
         height: 60px;
     }
-    h1.city-attractions {
-        font-size: 25px;
+    .header--city-center {
+        font-size: 20px;
     }
 }
