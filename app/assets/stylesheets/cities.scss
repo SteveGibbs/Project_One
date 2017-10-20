@@ -1,15 +1,11 @@
 // Place all the styles related to the Cities controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.new_city {
-    margin: 0 auto;
-}
+
 select {
     margin-left: 50px;
 }
-.edit_city {
-    margin: 0 auto;
-}
+
 .edit_city label {
     height: 16px;
 }
@@ -35,7 +31,12 @@ input.submit_format {
     text-align: right;
     margin-right: 40px;
 }
-.city-style {
+.list--grid-medium {
+    display: inline-block;
+    width: 580px;
+}
+
+.box-medium {
     width: 540px;
     height: 360px;
     position: relative;
@@ -46,17 +47,17 @@ input.submit_format {
 .city-main-style {
     text-align: center;
 }
-.city-image {
+.image-medium {
     width: 540px;
     height: 360px;
     position: relative;
     display: inline-block;
 }
-.city-image img {
+.image-medium img {
     height: 100%;
     width: 100%;
 }
-.city-text {
+.textbox-medium {
     position: absolute;
     top: 0;
     right: 0;
@@ -72,81 +73,77 @@ input.submit_format {
     display: inline-table;
     line-height: 360px;
 }
-.city-text a {
+.textbox-medium a {
     padding: 0;
 }
-.city-text:hover {
+.textbox-medium:hover {
     opacity: 1;
 }
-.city-text a:hover {
+.textbox-medium a:hover {
     color: white;
     padding: 0;
 }
-.city-text h5 {
+.textbox-medium h5 {
     display: inline-table;
     vertical-align: middle;
     line-height: 100%;
 }
-.city-attractions-li,
-.city-individual-li,
-.city-main-li {
-    display: inline-block;
-    width: 580px;
+.bottom {
+    vertical-align: bottom !important;
 }
+
+
 .city-attractions {
     font-family: "Lato";
     font-size: 30px;
     color: black;
 }
-.city-individual-header,
-.city-weather-header {
+.header--city-left,
+.header--weather-left {
     text-align: left;
 }
-.city-individual p {
-    text-align: justify;
-    width: 540px;
-}
+
 @media only screen and (max-width: 1024px) {
-    .city-main-li {
+    .list--grid-medium {
         display: inline-block;
         width: 325px;
     }
-    .city-style {
+    .box-medium {
         width: 320px;
         height: 213.3px;
     }
-    [class*="city-image"] {
+    [class*="image-medium"] {
         width: 320px;
         height: 213.3px;
     }
-    [class*="city-image"] img {
+    [class*="image-medium"] img {
         height: 213.3px;
         width: 320px;
     }
-    [class*="city-text"] {
+    [class*="textbox-medium"] {
         width: 320px;
         height: 213.3px;
         line-height: 213.3px;
     }
 }
 @media only screen and (max-width: 414px) {
-    .city-main-li {
+    .list--grid-medium {
         display: inline-block;
         width: 142px;
     }
-    .city-style {
+    .box-medium {
         width: 142px;
         height: 96px;
     }
-    [class*="city-image"] {
+    [class*="image-medium"] {
         width: 142px;
         height: 96px;
     }
-    [class*="city-image"] img {
+    [class*="image-medium"] img {
         height: 96px;
         width: 142px;
     }
-    [class*="city-text"] {
+    [class*="textbox-medium"] {
         width: 142px;
         height: 96px;
         line-height: 96px;
@@ -156,17 +153,15 @@ input.submit_format {
         width: auto;
         text-align: center;
     }
-    .city-attractions-li {
-        font-size: 10px;
-    }
+
     .city-individual p {
         width: 270px;
     }
-    .city-weather-header {
+    .header--weather-left {
         width: 270px;
         font-size: 12px;
     }
-    .city-individual-header {
+    .header--city-left {
         font-size: 35px;
         height: 60px;
     }

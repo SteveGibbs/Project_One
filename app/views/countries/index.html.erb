@@ -1,56 +1,39 @@
 <h1>DESTINATIONS</h1>
 <!-- <p>Find me in app/views/countries/index.html.erb</p> -->
 
-<!-- <ul>
-    <div class="header-style-city-tour">
+<ul>
+    <div class="container--grid">
         <% @countries.each do |a| %>
-        <li>
-            <%#= link_to(a.name.upcase, "/countries/#{a.id}") %>
-            <p></p>
-        </li>
-        <li>
-            <%#= image_tag(a.image) %>
-            <p></p>
+        <li class="list--grid-small">
+            <div class="box-small">
+                <div class="image-small <%=a.name%>">
+                     <%= image_tag(a.image) %>
+                </div>
+
+                <div class="textbox-small <%=a.name%>">
+                    <h3>
+                     <%= link_to(a.name.upcase, "/countries/#{a.id}") %>
+                    </h3>
+                </div>
+            </div>
         </li>
         <% end %>
-    </div>
-</ul> -->
-
-<ul>
-    <div class="country-main-style">
-        <% @countries.each do |a| %>
-        <li class="country-main-li">
-
-            <div class="country-style">
-                <div class="country-image-<%=a.name%>">
-                        <%= image_tag(a.image) %>
-                    </div>
-
-                    <div class="country-text-<%=a.name%>">
-                            <h3>
-                                <%= link_to(a.name.upcase, "/countries/#{a.id}") %>
-                            </h3>
-                    </div>
-                </div>
-            </li>
-            <% end %>
 
     </div>
 </ul>
 
 <ul>
-    <div class="country-main-style">
-    <li class="country-main-li">
-    <p class="country-main-p">Something witty and funny to say here.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur facere obcaecati, fugit tempora, incidunt voluptatem, earum, sapiente qui ratione dolor cumque necessitatibus nisi vel accusantium aut numquam voluptates eligendi animi.</p>
-    </li>
-    <li class="country-main-li">
-    <p class="country-main-p">Something even more funny to say.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur facere obcaecati, fugit tempora, incidunt voluptatem, earum, sapiente qui ratione dolor cumque necessitatibus nisi vel accusantium aut numquam voluptates eligendi animi.</p>
-    </li>
-    <li class="country-main-li">
-    <p class="country-main-p">Dry sarcasm best with a bitter twist.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur facere obcaecati, fugit tempora, incidunt voluptatem, earum, sapiente qui ratione dolor cumque necessitatibus nisi vel accusantium aut numquam voluptates eligendi animi.</p>
-    </li>
+    <div class="container--grid">
+        <li class="list--grid-small">
+            <p class="country-main-p">Something witty and funny to say here.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur facere obcaecati, fugit tempora, incidunt voluptatem, earum, sapiente qui ratione dolor cumque necessitatibus nisi vel accusantium aut numquam voluptates eligendi animi.</p>
+        </li>
+        <li class="list--grid-small">
+            <p class="country-main-p">Something even more funny to say.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur facere obcaecati, fugit tempora, incidunt voluptatem, earum, sapiente qui ratione dolor cumque necessitatibus nisi vel accusantium aut numquam voluptates eligendi animi.</p>
+        </li>
+        <li class="list--grid-small">
+            <p class="country-main-p">Dry sarcasm best with a bitter twist.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur facere obcaecati, fugit tempora, incidunt voluptatem, earum, sapiente qui ratione dolor cumque necessitatibus nisi vel accusantium aut numquam voluptates eligendi animi.</p>
+        </li>
     </div>
-
 </ul>
 
 <hr>

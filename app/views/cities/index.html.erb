@@ -2,18 +2,18 @@
 <!-- <p>Find me in app/views/cities/index.html.erb</p> -->
 
 <ul>
-    <div class="country-main-style">
+    <div class="container--grid">
 
         <% @cities.each do |a| %>
-        <li class="city-main-li">
-            <div class="city-style">
-                <div class="city-link">
+        <li class="list--grid-medium">
+            <div class="box-medium">
+
                 <h5>
                     <%= link_to(a.name.upcase, "/cities/#{a.id}") %>
                 </h5>
-                    </div>
+
                     <p></p>
-                    <div class="city-image">
+                    <div class="image-medium">
                         <%= image_tag(a.image) %>
                     </div>
             </div>

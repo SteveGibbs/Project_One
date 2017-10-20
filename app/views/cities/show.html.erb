@@ -1,25 +1,23 @@
 <h1></h1>
 <ul>
-    <div class="country-main-style">
-    <li class="city-individual-li">
+    <div class="container--grid">
+    <li class="container-medium">
 
-        <h2 class="city-individual-header"><%= @city.name.upcase %></h2>
+        <h2 class="header--city-left"><%= @city.name.upcase %></h2>
         <br>
-<div class="city-weather-header">
-
-
-        <% if @city.country.name =="Germany" %>
-        <% @country_code = "DE" %>
-    <% else %>
-        <%@country_code = "FR"  %>
-        <% end %>
-        <%= p "Current Temp: #{@weather["main"]["temp"].to_i}" %>
-        <%= p "Min: #{@weather["main"]["temp_min"].to_i}" %>
-        <%= p "Max: #{@weather["main"]["temp_max"].to_i} (c)" %>
-        <%= p "Weather: #{@weather["weather"].first["main"]}"%>
-        <%= image_tag "http://openweathermap.org/img/w/#{ @weather["weather"].first["icon"] }.png", :size => "20x20", :class =>"icon" %>
-        <br>
-</div>
+        <div class="header--weather-left">
+            <% if @city.country.name =="Germany" %>
+                <% @country_code = "DE" %>
+            <% else %>
+                <%@country_code = "FR"  %>
+            <% end %>
+            <%= p "Current Temp: #{@weather["main"]["temp"].to_i}" %>
+            <%= p "Min: #{@weather["main"]["temp_min"].to_i}" %>
+            <%= p "Max: #{@weather["main"]["temp_max"].to_i} (c)" %>
+            <%= p "Weather: #{@weather["weather"].first["main"]}"%>
+            <%= image_tag "http://openweathermap.org/img/w/#{ @weather["weather"].first["icon"] }.png", :size => "20x20", :class =>"icon" %>
+            <br>
+        </div>
 
         <div class="city-country-header">
             <% if @city.country %>
@@ -31,14 +29,14 @@
 
         <p></p>
         <p></p>
-        <div class="country-individual">
+        <div class="container--innerbox-medium">
             <%= image_tag (@city.image) %>
         </div>
     </li>
     <br class="fix">
 
-    <li class=city-individual-li>
-        <div class="country-individual">
+    <li class="container-medium bottom">
+        <div class="container--innerbox-medium">
             <%="Top Facts are: #{@city.top_facts}" %>
             <p></p>
 
@@ -63,8 +61,8 @@
     <div class="city-main-style">
 
 
-<li class="city-attractions-li">
-    <div class="city-individual">
+<li class="container-medium">
+    <div class="container--innerbox-medium">
         <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut tenetur libero consequuntur veritatis quas ex rerum distinctio ad, nam officiis magni, nobis laboriosam assumenda nulla voluptatibus molestiae earum ea enim?
         </p>
@@ -72,8 +70,8 @@
     </div>
 
 </li>
-<li class="city-attractions-li">
-    <div class="city-individual">
+<li class="container-medium">
+    <div class="container--innerbox-medium">
         <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum sint odit recusandae. Corporis sunt rem, hic deserunt, laboriosam repellendus ea soluta exercitationem blanditiis modi similique explicabo iure eius nobis nulla!    
         </p>

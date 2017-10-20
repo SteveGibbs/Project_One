@@ -1,24 +1,26 @@
 <ul>
     <h1><%= "Cities in #{@country.name}" %></h1>
-    <div class="country-main-style">
+    <div class="container--grid">
 
 
 
-    <li class="country-individual-li">
-        <div class="country-individual">
+    <li class="container-medium">
+        <div class="container--innerbox-medium">
             <%= image_tag(@country.image) %>
+            <div class="header-center">
+                        <% @country.cities.each do |w|  %>
+                        <%= link_to(w.name, "/cities/#{w.id}") %>
+                        <%end %>
+                        <p></p>
+                    </div>
+
         </div>
-        <div class="header-style-city-tour">
-            <% @country.cities.each do |w|  %>
-            <%= link_to(w.name, "/cities/#{w.id}") %>
-            <%end %>
-            <p></p>
-        </div>
+
     </li>
     <br class="fix">
 
-    <li class="country-individual-li">
-        <div class="country-individual">
+    <li class="container-medium">
+        <div class="container--innerbox-medium">
             <%="Top Facts are: #{@country.top_facts}" %>
             <p></p>
             <%="Main highlights are: #{@country.highlights}" %>
@@ -31,18 +33,18 @@
 
 <hr>
 <ul>
-    <div class="country-main-style">
+    <div class="container--grid">
 
 
-<li class="country-individual-li">
-    <div class="country-individual">
+<li class="container-medium">
+    <div class="container--innerbox-medium">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos necessitatibus perferendis officia consequuntur optio reiciendis excepturi ducimus vel repellat corporis, alias distinctio tempore corrupti dolor aliquam rem totam aut perspiciatis.
     <p></p>
 
     </div>
 </li>
-<li class="country-individual-li">
-    <div class="country-individual">
+<li class="container-medium">
+    <div class="container--innerbox-medium">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo praesentium, dignissimos tempora aperiam illum aspernatur nam debitis dicta impedit assumenda! Pariatur adipisci, asperiores fugiat dolor fugit commodi assumenda? Soluta, reiciendis?
     </div>
 </li>

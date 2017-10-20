@@ -117,6 +117,14 @@ body.pages.home_alt span.nav-logo {
   display:none;
 }
 
+.controls a {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+
+
+
 @media only screen and (max-width: 1500px) {
   span.nav-logo {
     display: none;

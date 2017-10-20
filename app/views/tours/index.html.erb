@@ -1,25 +1,22 @@
 <h1>TOURS</h1>
 
 <ul>
-    <div class="country-main-style">
-    <% @tours.each do |a| %>
-    <li class="country-main-li">
-        <div class="country-style">
-            <div class="country-image">
-                <%= image_tag(a.image) %>
-            </div>
+    <div class="container--grid">
+        <% @tours.each do |a| %>
+        <li class="list--grid-small">
+            <div class="box-small">
+                <div class="image-small">
+                    <%= image_tag(a.image) %>
+                </div>
 
-            <div class="country-text-tour">
-                    <h4>
-            <%= link_to(a.name.upcase, "/tours/#{a.id}") %>
-</h4>
+            <div class="textbox-small">
+               <h4>
+               <%= link_to(a.name.upcase, "/tours/#{a.id}") %>
+               </h4>
+            </div>
         </div>
-        <p></p>
+        </li>
+        <% end %>
 
     </div>
-
-    </li>
-    <% end %>
-
-</div>
 </ul>

@@ -1,13 +1,8 @@
 // Place all the styles related to the Countries controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.new_country {
-    margin: 0 auto;
-}
-.edit_country {
-    margin: 0 auto;
-}
-.country-style {
+
+.box-small {
     width: 378px;
     height: 264.6px;
     position: relative;
@@ -15,20 +10,21 @@
     margin: 0;
     text-align: center;
 }
-.country-main-style {
+.container--grid {
     text-align: center;
 }
-[class*="country-image"] {
+
+[class*="image-small"] {
     width: 378px;
     height: 264.6px;
     position: relative;
     display: inline-block;
 }
-[class*="country-image"] img {
+[class*="image-small"] img {
     height: 100%;
     width: 100%;
 }
-[class*="country-text"] {
+[class*="textbox-small"] {
     position: absolute;
     top: 0;
     right: 0;
@@ -44,38 +40,36 @@
     display: inline-table;
     line-height: 264.6px;
 }
-[class*="country-text"] a {
+[class*="textbox-small"] a {
     padding: 0;
 }
-[class*="country-text"]:hover {
+[class*="textbox-small"]:hover {
     opacity: 1;
 }
-[class*="country-text"] a:hover {
+[class*="textbox-small"] a:hover {
     color: white;
     padding: 0;
 }
-.country-text-tour {
-    opacity: 1;
-    background-color: rgba(0,0,0,0);
-}
-div.country-text-tour a {
-    color: white;
+
+div.textbox-small a {
+    color: lightskyblueblue;
     position: bottom;
 }
-.country-text-tour a:hover {
-    color: black;
+.textbox-small a:hover {
+    color: white;
 }
-[class*="country-text"] h3 {
+[class*="textbox-small"] h3, h4 {
     display: inline-table;
     vertical-align: middle;
     line-height: 100%;
 }
-.country-main-li {
+.list--grid-small {
     text-align: center;
     display: inline-block;
     width: 380px;
 }
-.country-individual-li {
+.container-medium {
+    vertical-align: top;
     text-align: center;
     display: inline-block;
     width: 580px;
@@ -87,11 +81,11 @@ h1 {
     font-size: 48px;
     text-align: center;
 }
-.country-individual img {
+.container--innerbox-medium img {
     height: 360px;
     width: 540px;
 }
-.country-individual {
+.container--innerbox-medium {
     width: 550px;
     height: auto;
     text-align: left;
@@ -104,37 +98,42 @@ p.country-main-p {
 .fix {
     display: none;
 }
+
+.header-center a {
+    text-align: left;
+    font-size: 24px;
+    margin-left: 5%;
+    padding-right: 8%;
+}
+
 @media only screen and (max-width: 1024px) {
-    .country-main-li {
+    .list--grid-small {
         display: inline-block;
         width: 325px;
     }
-    .country-individual-li {
-        display: inline-block;
-        width: 580px;
-    }
-    .country-style {
+
+    .box-small {
         width: 320px;
         height: 213.3px;
     }
-    [class*="country-image"] {
+    [class*="image-small"] {
         width: 320px;
         height: 213.3px;
     }
-    [class*="country-image"] img {
+    [class*="image-small"] img {
         width: 320px;
         height: 213.3px;
     }
-    [class*="country-text"] {
+    [class*="textbox-small"] {
         width: 320px;
         height: 213.3px;
         line-height: 213.3px;
     }
-    .country-individual img {
+    .container--innerbox-medium img {
         width: 580px;
         height: 325px;
     }
-    .country-individual {
+    .container--innerbox-medium {
         width: 580px;
         height: auto;
         text-align: justify;
@@ -142,50 +141,47 @@ p.country-main-p {
     .fix {
         display: inline-block;
     }
-    .header-style-city-tour {
-        text-align: left;
-        font-size: 20px;
-    }
+
 }
 @media only screen and (max-width: 414px) {
-    .country-main-li {
+    .list--grid-small {
         display: inline-block;
         width: 142px;
     }
-    .country-individual-li {
+    .container-medium {
         display: inline-block;
         width: 270px;
     }
-    .country-style {
+    .box-small {
         width: 142px;
         height: 96px;
     }
     .country-main-p {
         font-size: 10px;
     }
-    [class*="country-image"] {
+    [class*="image-small"] {
         width: 142px;
         height: 96px;
     }
-    [class*="country-image"] img {
+    [class*="image-small"] img {
         height: 96px;
         width: 142px;
     }
-    [class*="country-text"] {
+    [class*="textbox-small"] {
         width: 142px;
         height: 96px;
         line-height: 96px;
     }
-    .country-individual img {
+    .container--innerbox-medium img {
         width: 270px;
         height: 180px;
     }
-    .country-individual {
+    .container--innerbox-medium {
         width: 270px;
         height: auto;
         font-size: 10px;
     }
-    [class*="country-text"] h3 {
+    [class*="textbox-small"] h3 {
         font-size: 12px;
     }
     .fix {
@@ -194,7 +190,7 @@ p.country-main-p {
     h1 {
         font-size: 30px;
     }
-    .header-style-city-tour a {
+    .header-center a {
         font-size: 18px;
     }
 }
