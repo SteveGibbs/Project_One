@@ -65,7 +65,16 @@ form.search {
     color: black;
     font-size: 14px;
     margin-left: 24px;
+    vertical-align: middle;
+    height: auto;
 }
+
+.submit_format {
+    vertical-align: middle;
+    height: auto;
+    border-radius: 10px;
+}
+
 body.pages.home footer {
     margin-bottom: -60px;
 }
