@@ -2,29 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-form {
-    margin: 0 auto;
-    text-align: left;
-    width: 580px;
-    margin-top: 20px;
-    height: 500px;
-    border-radius: 15px;
-    border-color: black;
-    background-color: orange;
-    height: auto;
-}
 
 
 
-.countries label, .cities label, .tours label, .users label, .session label {
+
+ .session label {
     width: 250px;
 }
 
-// .countries input[id*='country'], .cities input[id*='city'], .tours input[id*='tour'], input#email, input#password {
-//     margin-left: 0;
-// }
 
-input[id*='country'], input[id*='city'], input[id*='tour'], input[id*='user'], input#email, input#password
+input, input#email, input#password
  {
     background-color: white;
     color: black;

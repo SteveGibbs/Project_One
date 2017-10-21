@@ -1,5 +1,4 @@
 
-
 <%= form_for @country do |f| %>
   <p>
     <br>
@@ -9,11 +8,11 @@
   </p>
   <p>
     <%= f.label :top_facts %>
-    <%= f.text_field :top_facts, :required => true %>
+    <%= f.text_area :top_facts, rows: 5, :required => true %>
   </p>
   <p>
     <%= f.label :highlights %>
-    <%= f.text_field :highlights, :required => true %>
+    <%= f.text_area :highlights, rows: 5, :required => true %>
   </p>
   <p>
     <%= f.label :weather %>

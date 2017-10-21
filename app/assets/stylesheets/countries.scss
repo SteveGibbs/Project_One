@@ -90,9 +90,9 @@ h1 {
     height: auto;
     text-align: left;
 }
-p.country-main-p {
+.text--grid {
     text-align: justify;
-    font-size: 12px;
+    font-size: 14px;
     margin: 3px;
 }
 .fix {
@@ -104,6 +104,45 @@ p.country-main-p {
     font-size: 24px;
     margin-left: 5%;
     padding-right: 8%;
+}
+
+body.countries.edit label,
+body.cities.edit label,
+body.users.edit label,
+body.tours.edit label,
+body.users.new label {
+    width: 12%;
+}
+
+body.countries.edit form,
+body.cities.edit form,
+body.users.edit form,
+body.tours.edit form,
+body.users.new form
+{
+    width: 70%;
+}
+
+
+body.countries.edit input, body.countries.edit textarea,
+body.cities.edit input, body.cities.edit textarea,
+body.users.edit input,
+body.tours.edit input, body.tours.edit textarea,
+body.users.new input {
+    width: 70%;
+    font-size: 13px;
+}
+
+textarea[id*='country'], textarea[id*='city'], textarea[id*="tour"] {
+    height: auto;
+}
+
+body.countries.edit input.submit_format,
+body.cities.edit input.submit_format,
+body.users.edit input.submit_format,
+body.tours.edit input.submit_format,
+body.users.new input.submit_format {
+    width: 140px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -156,7 +195,7 @@ p.country-main-p {
         width: 142px;
         height: 96px;
     }
-    .country-main-p {
+    .text--grid {
         font-size: 10px;
     }
     [class*="image-small"] {

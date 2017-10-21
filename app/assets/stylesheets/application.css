@@ -81,6 +81,9 @@ label {
   position: relative;
 }
 
+
+
+
 footer {
   background-color: #ccccb3;
   color: darkslategray;
@@ -94,6 +97,15 @@ footer {
 .footer-style{
   min-height: 60px;
   padding: 20px;
+}
+
+form {
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: ivory;
+  height: auto;
 }
 
 .slick-slider {
