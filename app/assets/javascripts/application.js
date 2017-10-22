@@ -32,4 +32,16 @@ $(document).on("turbolinks:load", function(){
     $('.slick-next').html('>');
 
 
+
+
 });
+
+function navBarFunction() {
+    console.log("hey there");
+    var navigationBar = document.getElementById("myNavBar");
+    if (navigationBar.className === "navbar") {
+        navigationBar.className += " responsive";
+    } else {
+        navigationBar.className = "navbar";
+    }
+}

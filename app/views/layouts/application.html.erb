@@ -30,22 +30,43 @@
 
 
   <nav>
-  <div class="center">
- <span class="nav-logo">Remarkable Voyages</span>
-<%= link_to("Home", pages_home_alt_path, :class => "navbar") %>
-<%= link_to("Countries", "/countries", :class => "navbar")%>
-<%= link_to("Cities", "/cities", :class => "navbar") %>
-<%= link_to("Tours", "/tours", :class => "navbar") %>
-
-  <% unless @current_user.present? %>
-  <%= link_to("Login", login_path(), :class => "navbar") %>
-  <%= link_to("SignUp", new_user_path(), :class => "navbar") %>
-  <%else %>
-  <%= link_to("Edit your profile", edit_user_path(@current_user.id), :class => "navbar") %>
-  <%= link_to("Log out #{@current_user.first_name} #{@current_user.last_name}", logout_path, :method => :delete, :class => "navbar2") %>
-  <% end %>
-  </div>
-
+    <ul class="navbar" id="myNavBar">
+        <div class="center--list">
+            <li>
+                <a id="icon-responsive" href="javascript:void(0);" onclick="navBarFunction()">&#9776;</a>
+            </li>
+            <li id="span--container">
+                <span class="nav-logo">Remarkable Voyages</span>
+            </li>
+            <li>
+                <%= link_to("Home", pages_home_alt_path) %>
+            </li>
+            <li>
+                <%= link_to("Countries", "/countries")%>
+            </li>
+            <li>
+                <%= link_to("Cities", "/cities") %>
+            </li>
+            <li>
+                <%= link_to("Tours", "/tours") %>
+            </li>
+        <% unless @current_user.present? %>
+            <li>
+                <%= link_to("Login", login_path()) %>
+            </li>
+            <li>
+                <%= link_to("SignUp", new_user_path()) %>
+            </li>
+        <%else %>
+            <li>
+                <%= link_to("Edit your profile", edit_user_path(@current_user.id)) %>
+            </li>
+            <li>
+                <%= link_to("Log out #{@current_user.first_name} #{@current_user.last_name}", logout_path, :method => :delete) %>
+            </li>
+        <% end %>
+        </div>
+    </ul>
   </nav>
 
 

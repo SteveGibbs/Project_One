@@ -42,47 +42,50 @@ nav:hover {
   background-color: gray;
 }
 span.nav-logo {
-  margin-left: 3%;
-  padding-right: 25%;
+  margin-left: 10%;
   text-align: left;
   font-size: 25px;
   font-weight: bold;
 }
-a {
-  height: 100%;
+
+#span--container{
+  width: 600px;
+  margin-left: 10%;
+}
+
+ul .center--list li a {
+  display: block;
   text-align: center;
 }
+
+a {
+  text-align: center;
+}
+
 a:hover {
   color: black;
 }
 
-.navbar {
-  margin: 20px;
-}
 
-.navbar2 {
-  margin-left: 30px;
+#icon-responsive {
+  display: none;
 }
 
 li {
   list-style-type: none;
 }
-label {
 
+label {
   margin-left: 50px;
   color: black;
   font-size: 16px;
   display: inline-block;
-
 }
 
 .container {
   min-height: 100%;
   position: relative;
 }
-
-
-
 
 footer {
   background-color: #ccccb3;
@@ -159,54 +162,105 @@ body.pages.home_alt span.nav-logo {
 }
 
 
-
-
 @media only screen and (max-width: 1500px) {
   span.nav-logo {
     display: none;
-  }
-  .navbar{
-    padding: 20px;
   }
 }
 
 
 @media only screen and (max-width: 768px) {
+  ul.navbar li a {
+    font-size: 16px;
+    display: none;
+  }
+
+  #icon-responsive {
+    float: left;
+    display: inline-block;
+  }
+  ul.navbar.responsive {
+    position: relative;
+  }
+  ul.navbar.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.navbar.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.navbar.responsive li a {
+    color: #2E2F30;
+    display: block;
+    text-align: left;
+  }
+  .navbar.responsive {
+    z-index: 10;
+    width: 120px;
+    height: auto;
+  }
+  ul#myNavBar {
+    background-color: ivory;
+    opacity: 0.7;
+  }
+
   h1 {
     font-size: 25px;
   }
   footer {
     font-size: 10px;
   }
-  .navbar{
-    padding: 10px;
-  }
 
-  .navbar2 {
-    margin-left: 15px;
-    margin-right: 0;
-  }
 }
 
 @media only screen and (max-width: 568px) {
+
+  ul.navbar li a {
+    font-size: 16px;
+    display: none;
+  }
+  #icon-responsive {
+    float: left;
+    display: inline-block;
+  }
+  ul.navbar.responsive {
+    position: relative;
+  }
+  ul.navbar.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.navbar.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.navbar.responsive li a {
+    color: #2E2F30;
+    display: block;
+    text-align: left;
+  }
+  .navbar.responsive {
+    z-index: 10;
+    width: 120px;
+    height: auto;
+  }
+  ul#myNavBar {
+    background-color: ivory;
+    opacity: 0.7;
+  }
+
   h1 {
     font-size: 20px;
   }
   footer {
     font-size: 10px;
   }
-  .navbar{
-    font-size: 12px;
-    padding: 0;
-  }
-
   nav{
     height: auto;
     line-height: 32px;
   }
 
-  .navbar2 {
-    margin-left: 5px;
-    margin-right: 0;
-  }
 }
