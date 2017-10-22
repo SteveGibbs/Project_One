@@ -18,6 +18,13 @@ input, input#email, input#password
     text-align: center;
 }
 
+form.login_form {
+  width: 60%;
+  text-align: center;
+}
+
+
+
 @media only screen and (max-width: 568px) {
   form.login_form {
       width: auto;
