@@ -1,27 +1,62 @@
 <h1></h1>
 
-<h4><%= "Current Tour: #{@tour.name}"%></h4>
-<p></p>
-<br>
-<%= image_tag (@tour.image) %>
-<p></p>
+<ul>
+    <div class="container--grid">
+    <li class="container-medium">
+
+        <h2 class="header--tour-left"><%= "#{@tour.name.upcase}"%></h2>
+        <br>
+        <div class="container--innerbox-medium">
+            <%= image_tag (@tour.image) %>
+        </div>
+    </li>
+
+
 <br class="fix">
-<p></p>
-<%="Top Facts are: #{@tour.top_facts}" %>
-<p></p>
-<%="Main highlights are: #{@tour.highlights}" %>
-<p></p>
-<div>Cities for the tour are:</div>
-<p></p>
 
-<% @tour.cities.each do |city| %>
-<%= link_to city.name, city_path(city.id) %>
-<%end  %>
+     <li class="container-medium bottom">
+        <div class="container--innerbox-medium">
 
-<p></p>
+            <%="Top Facts are: #{@tour.top_facts}" %>
+            <p></p>
+            <%="Main highlights are: #{@tour.highlights}" %>
+            <p></p>
+            <div>Cities for the tour are:</div>
+            <p></p>
 
+            <% @tour.cities.each do |city| %>
+            <%= link_to city.name, city_path(city.id) %>
+            <%end  %>
+        </div>
 
-<div class="controls">
+     </li>
+    </div>
+</ul>
+<hr>
+<h3 class="header--city-center">
+    Main Tour Attractions
+</h3>
+<ul>
+    <div class="container--grid">
+    <li class="container-medium">
+        <div class="container--innerbox-medium">
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut tenetur libero consequuntur veritatis quas ex rerum distinctio ad, nam officiis magni, nobis laboriosam assumenda nulla voluptatibus molestiae earum ea enim?
+            </p>
+
+        </div>
+    </li>
+    <li class="container-medium">
+        <div class="container--innerbox-medium">
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum sint odit recusandae. Corporis sunt rem, hic deserunt, laboriosam repellendus ea soluta exercitationem blanditiis modi similique explicabo iure eius nobis nulla!
+            </p>
+        </div>
+    </li>
+    </div>
+</ul>
+
+<div class="controls controls-center">
     <% if @current_user == nil %>
     <% %>
     <%elsif @current_user.admin.to_s == "true"  %>
@@ -29,3 +64,4 @@
     <%= link_to "Delete tour", @tour, :method => :delete, :data => { :confirm => "Please confirm?"} %>
     <%end %>
 </div>
+<br>

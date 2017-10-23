@@ -11,7 +11,7 @@
     <%= form_for @user do |f| %>
 <br>
         <%= f.label :title %>
-        <%= f.text_field :title, :required => true, :maxlength => 7, :size => 20 %>
+        <%= f.text_field :title, :required => true, :minlength =>2, :maxlength => 12 %>
         <%= f.label :first_name %>
         <%= f.text_field :first_name, :required => true %>
         <%= f.label :last_name %>
@@ -37,9 +37,9 @@
     <%= f.label :medical_condition, "Any Medical Conditions" %>
     <%= f.text_field :medical_condition %>
     <%= f.label :password %>
-    <%= f.password_field :password, :required => true%>
+    <%= f.password_field :password, :required => true, :minlength =>6, :maxlength =>10 %>
     <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation, :required => true%>
+    <%= f.password_field :password_confirmation, :required => true, :minlength =>6, :maxlength =>10 %>
 
 <%= f.submit "Submit", :class => "submit_format"%>
 <%end %>

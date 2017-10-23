@@ -24,4 +24,6 @@
 class User < ActiveRecord::Base
   has_secure_password
   has_and_belongs_to_many :tours
+  validates :contact_number, :numericality => {:only_integer => true}
+  validates_format_of :title, :first_name, :last_name, :suburb, :state, :with => /\A[a-z]+\z/i
 end
