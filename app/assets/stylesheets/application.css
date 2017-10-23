@@ -49,7 +49,7 @@ span.nav-logo {
 }
 
 #span--container{
-  width: 600px;
+  width: 35%;
   margin-left: 20%;
 }
 
@@ -164,15 +164,18 @@ body.pages.home_alt span.nav-logo {
   padding: 30px;
 }
 
-
-@media only screen and (max-width: 1500px) {
-  span.nav-logo {
-    display: none;
+@media only screen and (max-width: 1024px) {
+  #span--container{
+    width: 35%;
+    margin-left: 5%;
   }
 }
 
-
 @media only screen and (max-width: 768px) {
+  span.nav-logo {
+    display: none;
+  }
+
   ul.navbar li a {
     font-size: 16px;
     display: none;
@@ -262,7 +265,7 @@ body.pages.home_alt span.nav-logo {
     font-size: 10px;
   }
   nav{
-    height: auto;
+    height: 32px;
     line-height: 32px;
   }
 
