@@ -37,9 +37,9 @@
     <%= f.label :medical_condition, "Any Medical Conditions" %>
     <%= f.text_field :medical_condition %>
     <%= f.label :password %>
-    <%= f.password_field :password, :required => true, :minlength =>6, :maxlength =>10 %>
+    <%= f.password_field :password, :required => true %>
     <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation, :required => true, :minlength =>6, :maxlength =>10 %>
+    <%= f.password_field :password_confirmation, :required => true %>
 
 <%= f.submit "Submit", :class => "submit_format"%>
 <%end %>
