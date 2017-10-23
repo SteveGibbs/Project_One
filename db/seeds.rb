@@ -7,9 +7,9 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 User.destroy_all
-u1 = User.create :title => "Mr", :first_name => "John", :last_name => "Doe", :email => "johndoe@gmail.com", :dob => "01/08/1965", :gender => "male", :contact_number => "0433357430", :address_line_1 => "20 Mockingbird Lane", :address_line_2 => "", :suburb => "West Rydalmere", :diet => "vegetarian", :medical_condition => "not applicable", :password => "chicken", :password_confirmation => "chicken", :admin => "true"
+u1 = User.create :title => "Mr", :first_name => "John", :last_name => "Doe", :email => "johndoe@gmail.com", :dob => "01/08/1965", :gender => "male", :contact_number => "0433357430", :address_line_1 => "20 Mockingbird Lane", :address_line_2 => "", :suburb => "West Rydalmere", :diet => "vegetarian", :medical_condition => "not applicable", :password => "chickens", :password_confirmation => "chickens", :admin => "true"
 
-u2 = User.create :title => "Ms", :first_name => "Jane", :last_name => "Doe", :email => "janedoe@gmail.com", :dob => "11/08/1975", :gender => "female", :contact_number => "0833357430", :address_line_1 => "40 Mockingbird Lane", :address_line_2 => "", :suburb => "West Rydalmere", :diet => "vegetarian", :medical_condition => "not applicable", :password => "chicken", :password_confirmation => "chicken"
+u2 = User.create :title => "Ms", :first_name => "Jane", :last_name => "Doe", :email => "janedoe@gmail.com", :dob => "11/08/1975", :gender => "female", :contact_number => "0833357430", :address_line_1 => "40 Mockingbird Lane", :address_line_2 => "", :suburb => "West Rydalmere", :diet => "vegetarian", :medical_condition => "not applicable", :password => "chickens", :password_confirmation => "chickens"
 
 p u1
 p u2
