@@ -33,6 +33,53 @@ body .input-field {
   height: 16px;
   background-color: white;
 }
+
+.container {
+  min-height: 100%;
+  position: relative;
+}
+
+form {
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: ivory;
+  height: auto;
+}
+
+label {
+  margin-left: 50px;
+  margin-right: 50px;
+  color: black;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.controls-center {
+  text-align: center;
+}
+.controls a {
+  padding: 30px;
+}
+
+footer {
+  background-color: #ccccb3;
+  color: darkslategray;
+  height: auto;
+  min-height: 60px;
+  min-width: 100%;
+  text-align: center;
+  bottom: 0;
+}
+
+.footer-style{
+  min-height: 60px;
+  padding: 20px;
+}
+
+/* **STYLE NAVIGATION BAR**  */
+
 nav {
   background-color: lightslategray;
   font-size: 16px;
@@ -46,6 +93,14 @@ span.nav-logo {
   text-align: left;
   font-size: 25px;
   font-weight: bold;
+}
+
+body.pages.home span.nav-logo {
+  display:none;
+}
+
+body.pages.home_alt span.nav-logo {
+  display:none;
 }
 
 #span--container{
@@ -66,7 +121,6 @@ a:hover {
   color: black;
 }
 
-
 #icon-responsive {
   display: none;
 }
@@ -75,44 +129,10 @@ li {
   list-style-type: none;
 }
 
-label {
-  margin-left: 50px;
-  margin-right: 50px;
-  color: black;
-  font-size: 16px;
-  display: inline-block;
-}
+/* -----------------  */
 
 
-
-.container {
-  min-height: 100%;
-  position: relative;
-}
-
-footer {
-  background-color: #ccccb3;
-  color: darkslategray;
-  height: auto;
-  min-height: 60px;
-  min-width: 100%;
-  text-align: center;
-  bottom: 0;
-}
-
-.footer-style{
-  min-height: 60px;
-  padding: 20px;
-}
-
-form {
-  margin: 0 auto;
-  text-align: left;
-  margin-top: 20px;
-  border-radius: 15px;
-  background-color: ivory;
-  height: auto;
-}
+/* **STYLE IMAGE CAROUSEL**  */
 
 .slick-slider {
   max-width: 960px;
@@ -149,20 +169,9 @@ button.slick-next.slick-arrow{
   width: 100%;
 }
 
-body.pages.home span.nav-logo {
-  display:none;
-}
+/* -------------*/
 
-body.pages.home_alt span.nav-logo {
-  display:none;
-}
-
-.controls-center {
-  text-align: center;
-}
-.controls a {
-  padding: 30px;
-}
+/* **RESPONSIVE CSS FOR IPAD HEIGHT** */
 
 @media only screen and (max-width: 1024px) {
   #span--container{
@@ -174,6 +183,8 @@ body.pages.home_alt span.nav-logo {
     font-size: 24px;
   }
 }
+
+/* **RESPONSIVE CSS FOR IPAD WIDTH (HEIGHT IS 1024PX)** */
 
 @media only screen and (max-width: 768px) {
   span.nav-logo {
@@ -233,9 +244,9 @@ body.pages.home_alt span.nav-logo {
 
 }
 
+/* **RESPONSIVE CSS FOR IPHONE 5 SIZE HEIGHT (WIDTH IS 320PX) ** */
+
 @media only screen and (max-width: 568px) {
-
-
 
   ul.navbar li a {
     font-size: 16px;
@@ -271,8 +282,6 @@ body.pages.home_alt span.nav-logo {
     background-color: ivory;
     opacity: 0.7;
   }
-
-
 
   h1 {
     font-size: 32px;

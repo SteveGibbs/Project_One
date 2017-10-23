@@ -4,8 +4,7 @@
 
 
 
-input, input#email, input#password
- {
+input, input#email, input#password {
     background-color: white;
     color: black;
     height: 20px;
@@ -29,29 +28,25 @@ form.login_form {
 }
 
 @media only screen and (max-width: 768px){
+
   form.login_form {
     width: 80%;
   }
-
   input#email, input#password {
     width: auto;
   }
-
 }
 
-
-@media only screen and (max-width: 568px) {
+@media only screen and (max-width: 568px){
 
   form#new_user.new_user {
     width: auto;
   }
-
   label, input {
     font-size: 14px;
   }
-
   .session.new label{
     width: 60px;
     text-align: left;
   }
-  }
+}

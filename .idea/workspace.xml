@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7833f360-e8de-409b-87fb-414ffd847765" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/cities.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/cities.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/users.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/users.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/countries/show.html.erb" afterPath="$PROJECT_DIR$/app/views/countries/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tours/show.html.erb" afterPath="$PROJECT_DIR$/app/views/tours/show.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,44 +23,34 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.79123175">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
+          <file leaf-file-name="cities.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/cities.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+                <state relative-caret-position="1365">
+                  <caret line="176" column="25" lean-forward="false" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/countries/index.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="495">
+                  <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
           <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+            <entry file="file://$PROJECT_DIR$/app/views/countries/show.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-145">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="session_controller.rb" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/controllers/session_controller.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="cities.scss" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/cities.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="689">
-                  <caret line="176" column="25" lean-forward="false" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
+                <state relative-caret-position="120">
+                  <caret line="8" column="44" lean-forward="false" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
                   <folding />
                 </state>
               </provider>
@@ -75,7 +69,7 @@
           <file leaf-file-name="countries.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/countries.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1200">
+                <state relative-caret-position="1695">
                   <caret line="144" column="36" lean-forward="false" selection-start-line="144" selection-start-column="36" selection-end-line="144" selection-end-column="36" />
                   <folding />
                 </state>
@@ -85,28 +79,18 @@
           <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/tours/show.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="185">
-                  <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+                <state relative-caret-position="212">
+                  <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="seeds.rb" pinned="false" current-in-tab="false">
+          <file leaf-file-name="seeds.rb" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/db/seeds.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="585">
+                <state relative-caret-position="1140">
                   <caret line="78" column="609" lean-forward="false" selection-start-line="78" selection-start-column="609" selection-end-line="78" selection-end-column="609" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="edit.html.erb" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -117,6 +101,26 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="75">
                   <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="users.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/users.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="705">
+                  <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="195">
+                  <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -148,21 +152,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="application.css" pinned="false" current-in-tab="false">
+          <file leaf-file-name="application.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="79">
-                  <caret line="217" column="0" lean-forward="true" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+                <state relative-caret-position="-77">
+                  <caret line="246" column="19" lean-forward="false" selection-start-line="246" selection-start-column="19" selection-end-line="246" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
+          <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/cities/show.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="587">
-                  <caret line="77" column="5" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="77" selection-end-column="5" />
+                <state relative-caret-position="497">
+                  <caret line="49" column="21" lean-forward="true" selection-start-line="45" selection-start-column="12" selection-end-line="49" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -173,6 +177,16 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="105">
                   <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="session.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/session.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -201,7 +215,7 @@
           <file leaf-file-name="pages.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1486">
+                <state relative-caret-position="-781">
                   <caret line="74" column="24" lean-forward="false" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
                   <folding />
                 </state>
@@ -224,7 +238,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>city-link</find>
       <find>city-text</find>
       <find>h3</find>
       <find>new_city</find>
@@ -254,6 +267,7 @@
       <find>label.active</find>
       <find>User success</find>
       <find>.footer-style</find>
+      <find>user3</find>
     </findStrings>
     <replaceStrings>
       <replace>container--grid</replace>
@@ -284,7 +298,6 @@
         <option value="$PROJECT_DIR$/app/views/cities/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/tours/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/cities/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/countries/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/tours.scss" />
         <option value="$PROJECT_DIR$/app/views/countries/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/cities/_form.html.erb" />
@@ -296,14 +309,15 @@
         <option value="$PROJECT_DIR$/app/views/session/new.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/countries.scss" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/users.scss" />
         <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/app/views/tours/show.html.erb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/cities.scss" />
+        <option value="$PROJECT_DIR$/app/views/countries/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/tours/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/users.scss" />
       </list>
     </option>
   </component>
@@ -744,12 +758,12 @@
       <option name="presentableId" value="Default" />
       <updated>1507518752962</updated>
       <workItem from="1507518755061" duration="15115000" />
-      <workItem from="1508372208490" duration="62856000" />
+      <workItem from="1508372208490" duration="64878000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77971000" />
+    <option name="totallyTimeSpent" value="79993000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="63" width="1958" height="1090" extended-state="0" />
@@ -763,7 +777,7 @@
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25761488" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.098196395" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28957915" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -873,14 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/session.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/cities/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -945,26 +951,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/countries/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="827">
-          <caret line="82" column="4" lean-forward="false" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/countries/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/countries/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1003,14 +993,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1486">
-          <caret line="74" column="24" lean-forward="false" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tours/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1031,14 +1013,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="57" column="34" lean-forward="false" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/users.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1099,14 +1073,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1139,34 +1105,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+    <entry file="file://$PROJECT_DIR$/app/views/countries/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="217" column="0" lean-forward="true" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+        <state relative-caret-position="495">
+          <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/countries/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="44" lean-forward="false" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/cities/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="77" column="5" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="77" selection-end-column="5" />
+        <state relative-caret-position="497">
+          <caret line="49" column="21" lean-forward="true" selection-start-line="45" selection-start-column="12" selection-end-line="49" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tours/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        <state relative-caret-position="212">
+          <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="78" column="609" lean-forward="false" selection-start-line="78" selection-start-column="609" selection-end-line="78" selection-end-column="609" />
+        <state relative-caret-position="-781">
+          <caret line="74" column="24" lean-forward="false" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/countries.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1695">
+          <caret line="144" column="36" lean-forward="false" selection-start-line="144" selection-start-column="36" selection-end-line="144" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/session.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-77">
+          <caret line="246" column="19" lean-forward="false" selection-start-line="246" selection-start-column="19" selection-end-line="246" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/cities.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="176" column="25" lean-forward="false" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1179,18 +1185,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/countries.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="144" column="36" lean-forward="false" selection-start-line="144" selection-start-column="36" selection-end-line="144" selection-end-column="36" />
+        <state relative-caret-position="195">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/cities.scss">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/users.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="689">
-          <caret line="176" column="25" lean-forward="false" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
+        <state relative-caret-position="705">
+          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="78" column="609" lean-forward="false" selection-start-line="78" selection-start-column="609" selection-end-line="78" selection-end-column="609" />
           <folding />
         </state>
       </provider>

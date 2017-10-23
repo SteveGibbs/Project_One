@@ -26,6 +26,7 @@
 
             <% @tour.cities.each do |city| %>
             <%= link_to city.name, city_path(city.id) %>
+            <br>
             <%end  %>
         </div>
 

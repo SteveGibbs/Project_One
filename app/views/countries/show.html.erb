@@ -7,13 +7,6 @@
     <li class="container-medium">
         <div class="container--innerbox-medium">
             <%= image_tag(@country.image) %>
-            <div class="header-center">
-                        <% @country.cities.each do |w|  %>
-                        <%= link_to(w.name, "/cities/#{w.id}") %>
-                        <%end %>
-                        <p></p>
-                    </div>
-
         </div>
 
     </li>
@@ -26,16 +19,25 @@
             <%="Main highlights are: #{@country.highlights}" %>
             <p></p>
             <%="Climate: #{@country.weather}" %>
+          <p>Current Cities below:</p>
+                      <% @country.cities.each do |w|  %>
+                      <%= link_to(w.name, "/cities/#{w.id}") %>
+                      <br>
+                      <%end  %>
+
         </div>
     </li>
     </div>
 </ul>
 
 <hr>
+
+<h3 class="header--city-center">
+    Discover <%=@country.name%>
+</h3>
+
 <ul>
     <div class="container--grid">
-
-
     <li class="container-medium">
         <div class="container--innerbox-medium">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos necessitatibus perferendis officia consequuntur optio reiciendis excepturi ducimus vel repellat corporis, alias distinctio tempore corrupti dolor aliquam rem totam aut perspiciatis.
