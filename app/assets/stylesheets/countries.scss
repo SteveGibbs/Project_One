@@ -141,8 +141,9 @@ body.countries.edit input.submit_format,
 body.cities.edit input.submit_format,
 body.users.edit input.submit_format,
 body.tours.edit input.submit_format,
-body.users.new input.submit_format {
-    width: 140px;
+body.users.new input.submit_format,
+body.session.new input.submit_format{
+    width: 80px;
 }
 
 @media only screen and (max-width: 1024px) {
