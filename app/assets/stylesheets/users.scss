@@ -23,7 +23,7 @@ form.login_form {
   text-align: center;
 }
 
-label.active{
+.session.new label{
   width: 60px;
   text-align: left;
 }
@@ -40,5 +40,10 @@ label.active{
 
   label, input {
     font-size: 14px;
+  }
+
+  .session.new label{
+    width: 60px;
+    text-align: left;
   }
   }
